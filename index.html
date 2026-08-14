@@ -307,7 +307,30 @@ footer {
   .stats { gap: 32px; padding: 32px 16px; }
 }
 .scripture-bar{background:#0a0a12;border-bottom:1px solid rgba(201,168,76,.25);padding:7px 22px;font-family:system-ui,-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.08em;color:#c9a84c}
-</style>
+
+    .book-card img.cover{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;
+      background:#f1eee9;border-radius:10px 10px 0 0}
+    .cat-card.active{outline:3px solid var(--accent,#f5a524);outline-offset:2px}
+    .catalog{padding:70px 24px;background:#fbf9f6}
+    .catalog .section-inner{max-width:1240px;margin:0 auto}
+    .filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px 0 34px}
+    .filters button{border:1px solid rgba(0,0,0,.16);background:#fff;border-radius:999px;
+      padding:10px 20px;font:inherit;font-size:14.5px;cursor:pointer;color:#3a3a3a}
+    .filters button:hover{border-color:#f5a524}
+    .filters button[aria-pressed="true"]{background:#1f2a37;color:#fff;border-color:#1f2a37}
+    .catalog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:20px}
+    .cat-book{display:block;text-decoration:none;color:inherit}
+    .cat-book img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:8px;
+      background:#f1eee9;box-shadow:0 6px 18px rgba(0,0,0,.10);transition:transform .25s ease}
+    .cat-book:hover img{transform:translateY(-5px)}
+    .cat-book .t{font-size:13.5px;line-height:1.4;margin-top:9px;font-weight:600}
+    .cat-book .p{font-size:12.5px;color:#7a7368;margin-top:2px}
+    .catalog-count{text-align:center;color:#7a7368;font-size:14.5px;margin-top:26px}
+    .load-more{display:block;margin:26px auto 0;border:1px solid rgba(0,0,0,.2);background:#fff;
+      border-radius:999px;padding:13px 30px;font:inherit;font-size:15px;cursor:pointer}
+    .load-more:hover{border-color:#f5a524}
+
+  </style>
 </head>
 <body>
 <div class="scripture-bar"><span>John 3:16</span></div>
@@ -319,7 +342,7 @@ footer {
     <a href="#books">Books</a>
     <a href="#ages">By Age</a>
     <a href="#reviews">Reviews</a>
-    <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="nav-cta">Shop Amazon →</a>
+    <a href="#catalog" class="nav-cta">Shop Amazon →</a>
   </div>
 </nav>
 
@@ -334,7 +357,7 @@ footer {
   <h1>Stories That <span class="accent">Spark</span><br>Little Imaginations</h1>
   <p>Discover our collection of 200+ children's books covering adventure, animals, holidays, faith, and so much more. Every book is available on Amazon — ready for bedtime tonight.</p>
   <div class="hero-btns">
-    <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="btn-primary">🛒 Shop on Amazon</a>
+    <a href="#catalog" class="btn-primary">🛒 Shop on Amazon</a>
     <a href="#categories" class="btn-secondary">Browse Categories →</a>
   </div>
 </section>
@@ -354,55 +377,35 @@ footer {
     <h2 class="section-title">Something for Every Child</h2>
     <p class="section-body">From bedtime adventures to faith-based stories, our books cover every interest and every mood — because every child deserves a book they can't put down.</p>
     <div class="cat-grid">
-      <a href="https://www.amazon.com/s?k=kid+story+books+adventure" target="_blank" class="cat-card">
-        <span class="cat-icon">🏔️</span>
-        <div class="cat-name">Adventure</div>
-        <div class="cat-count">Exciting journeys</div>
+      <a href="#catalog" data-cat="childrens" class="cat-card">
+        <span class="cat-icon">📚</span>
+        <div class="cat-name">Children's Stories</div>
+        <div class="cat-count">71 books</div>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+animals" target="_blank" class="cat-card">
-        <span class="cat-icon">🦁</span>
-        <div class="cat-name">Animals</div>
-        <div class="cat-count">Furry friends</div>
-      </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+faith" target="_blank" class="cat-card">
+      <a href="#catalog" data-cat="christian" class="cat-card">
         <span class="cat-icon">✝️</span>
-        <div class="cat-name">Faith</div>
-        <div class="cat-count">Inspiring values</div>
+        <div class="cat-name">Faith & Christian</div>
+        <div class="cat-count">65 books</div>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+holidays" target="_blank" class="cat-card">
-        <span class="cat-icon">🎄</span>
-        <div class="cat-name">Holidays</div>
-        <div class="cat-count">Seasonal fun</div>
-      </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+bedtime" target="_blank" class="cat-card">
-        <span class="cat-icon">🌙</span>
-        <div class="cat-name">Bedtime</div>
-        <div class="cat-count">Sweet dreams</div>
-      </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+learning" target="_blank" class="cat-card">
-        <span class="cat-icon">📖</span>
-        <div class="cat-name">Early Learning</div>
-        <div class="cat-count">ABC & 123</div>
-      </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+nature" target="_blank" class="cat-card">
+      <a href="#catalog" data-cat="nature" class="cat-card">
         <span class="cat-icon">🌿</span>
-        <div class="cat-name">Nature</div>
-        <div class="cat-count">Our world</div>
+        <div class="cat-name">Nature & Science</div>
+        <div class="cat-count">34 books</div>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+friendship" target="_blank" class="cat-card">
-        <span class="cat-icon">🤝</span>
-        <div class="cat-name">Friendship</div>
-        <div class="cat-count">Better together</div>
+      <a href="#catalog" data-cat="cookbooks" class="cat-card">
+        <span class="cat-icon">🍳</span>
+        <div class="cat-name">Cookbooks</div>
+        <div class="cat-count">32 books</div>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+family" target="_blank" class="cat-card">
-        <span class="cat-icon">👨‍👩‍👧‍👦</span>
-        <div class="cat-name">Family</div>
-        <div class="cat-count">Love at home</div>
+      <a href="#catalog" data-cat="coloring" class="cat-card">
+        <span class="cat-icon">🎨</span>
+        <div class="cat-name">Colouring & Activity</div>
+        <div class="cat-count">9 books</div>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+fantasy" target="_blank" class="cat-card">
-        <span class="cat-icon">🧙</span>
-        <div class="cat-name">Fantasy</div>
-        <div class="cat-count">Magic worlds</div>
+      <a href="#catalog" data-cat="teens" class="cat-card">
+        <span class="cat-icon">🧭</span>
+        <div class="cat-name">Teens</div>
+        <div class="cat-count">9 books</div>
       </a>
     </div>
   </div>
@@ -415,44 +418,1163 @@ footer {
     <h2 class="section-title">Fan Favorites</h2>
     <p class="section-body">These books are loved by kids and parents alike. Each one is crafted to entertain, inspire, and spark a lifelong love of reading.</p>
     <div class="books-grid">
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🦁</div>
-        <div class="book-info"><div class="book-title">The Brave Little Lion</div><div class="book-age">Ages 3–6</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0H1RXJJLL" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0H1RXJJLL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Butterfly Sisters">
+        <div class="book-info"><div class="book-title">The Butterfly Sisters</div><div class="book-age">Children's Stories</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🌟</div>
-        <div class="book-info"><div class="book-title">Stars of Faith</div><div class="book-age">Ages 4–8</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0GZPK1SBB" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0GZPK1SBB.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Everyday Queen: A Crown for Mom">
+        <div class="book-info"><div class="book-title">The Everyday Queen: A Crown for Mom</div><div class="book-age">Children's Stories</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🎄</div>
-        <div class="book-info"><div class="book-title">Christmas on the Farm</div><div class="book-age">Ages 3–7</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0H2RVLFNK" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0H2RVLFNK.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Donkey Who Had to Speak Up">
+        <div class="book-info"><div class="book-title">The Donkey Who Had to Speak Up</div><div class="book-age">Faith & Christian</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🚀</div>
-        <div class="book-info"><div class="book-title">Adventure to the Stars</div><div class="book-age">Ages 5–9</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0GX6NKB8K" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0GX6NKB8K.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Obedience On The First Try">
+        <div class="book-info"><div class="book-title">Obedience On The First Try</div><div class="book-age">Faith & Christian</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🐢</div>
-        <div class="book-info"><div class="book-title">The Turtle Who Never Quit</div><div class="book-age">Ages 4–7</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0H4SNH1SY" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0H4SNH1SY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="From Puddle to Pond: Tadpole&#x27;s Big Adventure">
+        <div class="book-info"><div class="book-title">From Puddle to Pond: Tadpole&#x27;s Big Adventure</div><div class="book-age">Nature & Science</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="book-card">
-        <div class="book-cover-placeholder">🌈</div>
-        <div class="book-info"><div class="book-title">Colors of Kindness</div><div class="book-age">Ages 2–5</div></div>
-        <span class="book-btn">View on Amazon →</span>
+      <a href="https://www.amazon.com/dp/B0GWHM9SZX" target="_blank" rel="noopener" class="book-card">
+        <img class="cover" src="https://images-na.ssl-images-amazon.com/images/P/B0GWHM9SZX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Copper &amp; Cane: The Elevated Southern Sweet Treats Cookbook">
+        <div class="book-info"><div class="book-title">Copper &amp; Cane: The Elevated Southern Sweet Treats Cookbook</div><div class="book-age">Cookbooks</div></div>
+        <span class="book-btn">View on Amazon &rarr;</span>
       </a>
-    </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="btn-primary" style="background:var(--night);color:var(--sun);">View All 200+ Books on Amazon →</a>
     </div>
   </div>
 </section>
 
 <!-- WHY -->
+
+<section class="catalog" id="catalog">
+  <div class="section-inner">
+    <div class="eyebrow">The Full Library</div>
+    <h2 class="section-title">Every Book We&rsquo;ve Published</h2>
+    <p class="section-body">220 titles across picture books, faith stories, nature and science, cookbooks, colouring books and books for teens. Tap any cover to open it on Amazon.</p>
+    <div class="filters">
+            <button data-filter="all" aria-pressed="true">All 220 books</button>
+      <button data-filter="childrens" aria-pressed="false">📚 Children's Stories (71)</button>
+      <button data-filter="christian" aria-pressed="false">✝️ Faith & Christian (65)</button>
+      <button data-filter="nature" aria-pressed="false">🌿 Nature & Science (34)</button>
+      <button data-filter="cookbooks" aria-pressed="false">🍳 Cookbooks (32)</button>
+      <button data-filter="coloring" aria-pressed="false">🎨 Colouring & Activity (9)</button>
+      <button data-filter="teens" aria-pressed="false">🧭 Teens (9)</button>
+    </div>
+    <div class="catalog-grid" id="catalogGrid">
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H4SNH1SY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H4SNH1SY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="From Puddle to Pond: Tadpole&#x27;s Big Adventure">
+        <div class="t">From Puddle to Pond: Tadpole&#x27;s Big Adventure</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H3Q9HVV7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H3Q9HVV7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Hungry Little Seed: How the Venus Flytrap Grows">
+        <div class="t">The Hungry Little Seed: How the Venus Flytrap Grows</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0H1RXJJLL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1RXJJLL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Butterfly Sisters">
+        <div class="t">The Butterfly Sisters</div>
+        <div class="p">$10.33</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0H36FM3RT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H36FM3RT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Compte avec Moi : De Un à Dix">
+        <div class="t">Compte avec Moi : De Un à Dix</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0H2RVLFNK" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H2RVLFNK.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Donkey Who Had to Speak Up">
+        <div class="t">The Donkey Who Had to Speak Up</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H2LHWW2H" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H2LHWW2H.jpg" width="400" height="600" loading="lazy" decoding="async" alt="El Ciclo de Vida del Salmón: Edades 3-5">
+        <div class="t">El Ciclo de Vida del Salmón: Edades 3-5</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H2LLDM8W" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H2LLDM8W.jpg" width="400" height="600" loading="lazy" decoding="async" alt="El ciclo de vida de un pollo: Edades 3-5">
+        <div class="t">El ciclo de vida de un pollo: Edades 3-5</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H2B8F8LL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H2B8F8LL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="El Pequeño Ciclo de Zumbido">
+        <div class="t">El Pequeño Ciclo de Zumbido</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H23W9ZFJ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H23W9ZFJ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Lifecycle of a Kangaroo: Ages 3-5">
+        <div class="t">The Lifecycle of a Kangaroo: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H1X4KM9Y" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1X4KM9Y.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Lifecycle of a Hummingbird: Ages 3-5">
+        <div class="t">The Lifecycle of a Hummingbird: Ages 3-5</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H1RSF8BC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1RSF8BC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Lifecycle of a Salmon: Ages 3-5">
+        <div class="t">The Lifecycle of a Salmon: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H1MW3MCS" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1MW3MCS.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Pine Tree: The Evergreen Promise">
+        <div class="t">Lifecycle of a Pine Tree: The Evergreen Promise</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H1J8NNNQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1J8NNNQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Strawberry">
+        <div class="t">Lifecycle of a Strawberry</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0H1HTWCHC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0H1HTWCHC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Bean Plant: Reaching for the Light">
+        <div class="t">Lifecycle of a Bean Plant: Reaching for the Light</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GZVSS9QZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZVSS9QZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Faithful Mustard Seed: Small but Mighty">
+        <div class="t">The Faithful Mustard Seed: Small but Mighty</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GZPK1SBB" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZPK1SBB.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Everyday Queen: A Crown for Mom">
+        <div class="t">The Everyday Queen: A Crown for Mom</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GZDSBP8B" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZDSBP8B.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Honest Ivy: The Courage to Tell the Truth">
+        <div class="t">The Honest Ivy: The Courage to Tell the Truth</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GZBKWC13" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZBKWC13.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Bountiful Bramble: Learning to Share Your Sweetness">
+        <div class="t">The Bountiful Bramble: Learning to Share Your Sweetness</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GZ4GYNCR" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZ4GYNCR.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Gentle Willow: Letting Go of the Heavy Leaves">
+        <div class="t">The Gentle Willow: Letting Go of the Heavy Leaves</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GZ48DL2Z" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GZ48DL2Z.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Remarkable Redwood: Standing Strong Together">
+        <div class="t">The Remarkable Redwood: Standing Strong Together</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GYWWZTZW" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GYWWZTZW.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Brave Bamboo: Learning to Bend in the Wind">
+        <div class="t">The Brave Bamboo: Learning to Bend in the Wind</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GYRT1SVB" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GYRT1SVB.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Daring Dandelion: Scattering Seeds of Joy">
+        <div class="t">The Daring Dandelion: Scattering Seeds of Joy</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GYP3DVDZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GYP3DVDZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Humble Apple Seed: From Tiny Pip to a Harvest of Joy">
+        <div class="t">The Humble Apple Seed: From Tiny Pip to a Harvest of Joy</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GXYWB7ZC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXYWB7ZC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The New Little Sister">
+        <div class="t">The New Little Sister</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCYR4D1T" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCYR4D1T.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Cam the Chameleon Who Ran Out of Color">
+        <div class="t">Cam the Chameleon Who Ran Out of Color</div>
+        <div class="p">$14.25</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G8VRZ4GJ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G8VRZ4GJ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Benny&#x27;s Big Balloon">
+        <div class="t">Benny&#x27;s Big Balloon</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G6WRDNLV" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6WRDNLV.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Barnaby Bear&#x27;s Wobbly Bicycle">
+        <div class="t">Barnaby Bear&#x27;s Wobbly Bicycle</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY8VFHB8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY8VFHB8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Radiant Sunflower: From Tiny Seed to Golden Giant">
+        <div class="t">The Radiant Sunflower: From Tiny Seed to Golden Giant</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY815SH7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY815SH7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Marvelous Monarch: From Tiny Egg to Painted Wings">
+        <div class="t">The Marvelous Monarch: From Tiny Egg to Painted Wings</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY7Q2LTB" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY7Q2LTB.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Mighty Oak: From Acorn to Ancient Sentinel">
+        <div class="t">The Mighty Oak: From Acorn to Ancient Sentinel</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY7C6LM4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY7C6LM4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Penguin: Ages 3-5">
+        <div class="t">Lifecycle of a Penguin: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY4TM8J5" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY4TM8J5.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Spider: Ages 3-5">
+        <div class="t">Lifecycle of a Spider: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY46SWTN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY46SWTN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of an Ant: Ages 3-5">
+        <div class="t">Lifecycle of an Ant: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GY3MJN7Y" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GY3MJN7Y.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle Of An Apple Tree: Ages 3-5">
+        <div class="t">Lifecycle Of An Apple Tree: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GXZGWSN7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXZGWSN7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Chicken: Ages 3-5">
+        <div class="t">Lifecycle of a Chicken: Ages 3-5</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GXVLH1HF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXVLH1HF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Five Senses: Ages 3-5">
+        <div class="t">The Five Senses: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GXP4Z5Z8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXP4Z5Z8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Ladybug: Ages 3-5">
+        <div class="t">Lifecycle of a Ladybug: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GXJ7DCK7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXJ7DCK7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Sea Turtle: Ages 3-5">
+        <div class="t">Lifecycle of a Sea Turtle: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GXDZ6TNW" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXDZ6TNW.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Frog: Ages 3-5">
+        <div class="t">Lifecycle of a Frog: Ages 3-5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GX9JL5MM" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GX9JL5MM.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle of a Honey Bee">
+        <div class="t">Lifecycle of a Honey Bee</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GX7CPD3K" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GX7CPD3K.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle Of A Plant">
+        <div class="t">Lifecycle Of A Plant</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GX6NKB8K" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GX6NKB8K.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Obedience On The First Try">
+        <div class="t">Obedience On The First Try</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="nature" href="https://www.amazon.com/dp/B0GWXYJSG6" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GWXYJSG6.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Lifecycle Of A Butterfly">
+        <div class="t">Lifecycle Of A Butterfly</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GWWXB1QC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GWWXB1QC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Hector the Hippo and the Huge Hat">
+        <div class="t">Hector the Hippo and the Huge Hat</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GWHM9SZX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GWHM9SZX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Copper &amp; Cane: The Elevated Southern Sweet Treats Cookbook">
+        <div class="t">Copper &amp; Cane: The Elevated Southern Sweet Treats Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GW34JNV9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GW34JNV9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Conscious Discipline: Understanding Our Feelings">
+        <div class="t">Conscious Discipline: Understanding Our Feelings</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVY2SJ3X" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVY2SJ3X.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Spoon &amp; Silk: The Elevated Southern Pudding Cookbook">
+        <div class="t">Spoon &amp; Silk: The Elevated Southern Pudding Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GW2MSG6V" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GW2MSG6V.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Cream &amp; Churn: The Elevated Southern Ice Cream Cookbook">
+        <div class="t">Cream &amp; Churn: The Elevated Southern Ice Cream Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3TPMGWW" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3TPMGWW.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Planting Seeds of Kindness">
+        <div class="t">Planting Seeds of Kindness</div>
+        <div class="p">$16.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVNZ72PY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVNZ72PY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Batter &amp; Brass: The Elevated Southern Bar Cookbook">
+        <div class="t">Batter &amp; Brass: The Elevated Southern Bar Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVMRH2VL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVMRH2VL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Molasses &amp; Melt: The Elevated Southern Cookie Cookbook">
+        <div class="t">Molasses &amp; Melt: The Elevated Southern Cookie Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVMV534Y" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVMV534Y.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Orchard &amp; Iron: The Elevated Southern Cobbler Cookbook">
+        <div class="t">Orchard &amp; Iron: The Elevated Southern Cobbler Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVS2VF6T" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVS2VF6T.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Dough &amp; Dawn: The Elevated Southern Pastry Cookbook">
+        <div class="t">Dough &amp; Dawn: The Elevated Southern Pastry Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GVG37FNF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GVG37FNF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Rise &amp; Rest: The Elevated Southern Bread Cookbook">
+        <div class="t">Rise &amp; Rest: The Elevated Southern Bread Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GV8LW9WT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GV8LW9WT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Velvet &amp; Crumb: The Elevated Southern Cake Cookbook">
+        <div class="t">Velvet &amp; Crumb: The Elevated Southern Cake Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GV7QZ7TW" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GV7QZ7TW.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Butter &amp; Brown Sugar: The Elevated Southern Pie Cookbook">
+        <div class="t">Butter &amp; Brown Sugar: The Elevated Southern Pie Cookbook</div>
+        <div class="p">$13.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GV38GSJL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GV38GSJL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Goliath the Gentle Giant">
+        <div class="t">Goliath the Gentle Giant</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GTZT5M17" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GTZT5M17.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Grumpy Grandfather Clock">
+        <div class="t">The Grumpy Grandfather Clock</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GTZK4KQ4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GTZK4KQ4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Luna and the Lullaby Light">
+        <div class="t">Luna and the Lullaby Light</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GTGGD52W" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GTGGD52W.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Daily Affirmations for Victorious Teens">
+        <div class="t">Daily Affirmations for Victorious Teens</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GTBGGYTD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GTBGGYTD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Gideon&#x27;s Great Height">
+        <div class="t">Gideon&#x27;s Great Height</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GT9S3BTJ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GT9S3BTJ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Franklin&#x27;s Leap of Faith">
+        <div class="t">Franklin&#x27;s Leap of Faith</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GT4VC6ZP" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GT4VC6ZP.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The True Meaning of Easter">
+        <div class="t">The True Meaning of Easter</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FXRGGS7M" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXRGGS7M.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Noah&#x27;s Ark">
+        <div class="t">Noah&#x27;s Ark</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FXRKJ5K3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXRKJ5K3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jonah and the Big Fish">
+        <div class="t">Jonah and the Big Fish</div>
+        <div class="p">$16.50</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GT17ZCTZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GT17ZCTZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Faithful Fig Tree">
+        <div class="t">The Faithful Fig Tree</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GSWCPW2F" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GSWCPW2F.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Felix the Flashlight: A Story of Shining Bright">
+        <div class="t">Felix the Flashlight: A Story of Shining Bright</div>
+        <div class="p">$15.49</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GQB4QWRG" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GQB4QWRG.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Creature Connections: Addison&#x27;s Quiet Grace">
+        <div class="t">Creature Connections: Addison&#x27;s Quiet Grace</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GSFFNK8L" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GSFFNK8L.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Quiet Strength: Volume 5">
+        <div class="t">Quiet Strength: Volume 5</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GSCV7MYR" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GSCV7MYR.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Olivia&#x27;s Tangled Day">
+        <div class="t">Olivia&#x27;s Tangled Day</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GS5K47S9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GS5K47S9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Eddie the Engine&#x27;s Impossible Pull">
+        <div class="t">Eddie the Engine&#x27;s Impossible Pull</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GS543MY3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GS543MY3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Edgar the Emu&#x27;s Fast Feet">
+        <div class="t">Edgar the Emu&#x27;s Fast Feet</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GS2H2DWY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GS2H2DWY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Ernie the Eraser&#x27;s Gift of Grace">
+        <div class="t">Ernie the Eraser&#x27;s Gift of Grace</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G25LWFSF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G25LWFSF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Sammy&#x27;s Thankful Tree">
+        <div class="t">Sammy&#x27;s Thankful Tree</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GRMNRD8B" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GRMNRD8B.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Danny the Drum&#x27;s Big Beat">
+        <div class="t">Danny the Drum&#x27;s Big Beat</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GR82TKS8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GR82TKS8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Chloe the Chameleon Who Learned to Shine">
+        <div class="t">Chloe the Chameleon Who Learned to Shine</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0GR1784L8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GR1784L8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="St Patricks Day Coloring Book">
+        <div class="t">St Patricks Day Coloring Book</div>
+        <div class="p">$12.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GQQ3CP37" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GQQ3CP37.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Colin the Compass: God&#x27;s Guide">
+        <div class="t">Colin the Compass: God&#x27;s Guide</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0GQPVCX1L" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GQPVCX1L.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Bold &amp; Brilliant: A Coloring Book for Black Girls">
+        <div class="t">Bold &amp; Brilliant: A Coloring Book for Black Girls</div>
+        <div class="p">$16.95</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GQ51LR6X" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GQ51LR6X.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Quiet Strength Volume 4: Designed for a Purpose">
+        <div class="t">Quiet Strength Volume 4: Designed for a Purpose</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GQ372KLK" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GQ372KLK.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Quiet Strength (Volume 3): My Place in the Body">
+        <div class="t">Quiet Strength (Volume 3): My Place in the Body</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GPX33Z2C" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPX33Z2C.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Quiet Strength (Volume 2): Peace in the Noise">
+        <div class="t">Quiet Strength (Volume 2): Peace in the Noise</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GPWDCC7Q" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPWDCC7Q.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Quiet Strength (Volume 1): God Made My Mind">
+        <div class="t">Quiet Strength (Volume 1): God Made My Mind</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GPPZZNLP" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPPZZNLP.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Everyday High-Protein Cookbook">
+        <div class="t">The Everyday High-Protein Cookbook</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GPL1SRTX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPL1SRTX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Secret To Unshakable Truth!">
+        <div class="t">The Secret To Unshakable Truth!</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GPLD3LXV" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPLD3LXV.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Navigating Life&#x27;s Deep Questions: Why Do Bad Things Happen?">
+        <div class="t">Navigating Life&#x27;s Deep Questions: Why Do Bad Things Happen?</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GPDKZB4M" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GPDKZB4M.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Roux &amp; Root: A Culinary Journey Of Heritage and Flavor">
+        <div class="t">Roux &amp; Root: A Culinary Journey Of Heritage and Flavor</div>
+        <div class="p">$12.75</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHQGGTXR" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHQGGTXR.jpg" width="400" height="600" loading="lazy" decoding="async" alt="WILD &amp; CHOSEN: The Hunter&#x27;s Harvest Cookbook">
+        <div class="t">WILD &amp; CHOSEN: The Hunter&#x27;s Harvest Cookbook</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHPXRHVC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHPXRHVC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="PRESS &amp; PULSE: Recovery Tonics and Vitality Blends">
+        <div class="t">PRESS &amp; PULSE: Recovery Tonics and Vitality Blends</div>
+        <div class="p">$12.75</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHP1V63W" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHP1V63W.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Field &amp; Fuel: Essential Carbohydrates for Endurance">
+        <div class="t">Field &amp; Fuel: Essential Carbohydrates for Endurance</div>
+        <div class="p">$12.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHNDNN46" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHNDNN46.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Prime And Power: High-Performance Proteins for Strength">
+        <div class="t">Prime And Power: High-Performance Proteins for Strength</div>
+        <div class="p">$12.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHJKKPYN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHJKKPYN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Grits And Grain: Morning Fuel for Discipline and Drive">
+        <div class="t">Grits And Grain: Morning Fuel for Discipline and Drive</div>
+        <div class="p">$12.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GJD6V82Q" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GJD6V82Q.jpg" width="400" height="600" loading="lazy" decoding="async" alt="SOUL &amp; SPICE: Elevated Soul Food">
+        <div class="t">SOUL &amp; SPICE: Elevated Soul Food</div>
+        <div class="p">$12.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GJ3WTHVC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GJ3WTHVC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="SMOKE &amp; SEAR: Elevated Barbecue &amp; Grilling">
+        <div class="t">SMOKE &amp; SEAR: Elevated Barbecue &amp; Grilling</div>
+        <div class="p">$12.75</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHYDGG84" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHYDGG84.jpg" width="400" height="600" loading="lazy" decoding="async" alt="WOK &amp; WILLOW: Elevated Asian Fusion">
+        <div class="t">WOK &amp; WILLOW: Elevated Asian Fusion</div>
+        <div class="p">$12.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GJKZC41T" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GJKZC41T.jpg" width="400" height="600" loading="lazy" decoding="async" alt="IRON &amp; OIL: One Skillet, Infinite Flavor">
+        <div class="t">IRON &amp; OIL: One Skillet, Infinite Flavor</div>
+        <div class="p">$12.75</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GP6JJ86J" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GP6JJ86J.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Secret To Knowing God">
+        <div class="t">The Secret To Knowing God</div>
+        <div class="p">$16.99</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GP13KJW9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GP13KJW9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Type 2 Table: Delicious Meals for a Balanced Life">
+        <div class="t">The Type 2 Table: Delicious Meals for a Balanced Life</div>
+        <div class="p">$17.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GNZHL78N" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GNZHL78N.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Arthur the Anchor Holds Fast">
+        <div class="t">Arthur the Anchor Holds Fast</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GNTDR7GT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GNTDR7GT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Pip, The Super Swimmer">
+        <div class="t">Pip, The Super Swimmer</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="teens" href="https://www.amazon.com/dp/B0GNK7HTS6" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GNK7HTS6.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Celebrating Black History: Heroes and Innovators">
+        <div class="t">Celebrating Black History: Heroes and Innovators</div>
+        <div class="p">$19.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GNJG3BZY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GNJG3BZY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Barnaby the Bumblebee &amp; The Impossible Flight">
+        <div class="t">Barnaby the Bumblebee &amp; The Impossible Flight</div>
+        <div class="p">$13.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GN8XWHBH" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GN8XWHBH.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Rocky the Geode &amp; The Hidden Treasure">
+        <div class="t">Rocky the Geode &amp; The Hidden Treasure</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GN8SHRZZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GN8SHRZZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Flash the Firefly &amp; The Darkest Night">
+        <div class="t">Flash the Firefly &amp; The Darkest Night</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GN3L18Z3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GN3L18Z3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Sammy the Seed: Fun Facts &amp; Big Faith for Little Hearts">
+        <div class="t">Sammy the Seed: Fun Facts &amp; Big Faith for Little Hearts</div>
+        <div class="p">$13.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GN2ZCFY9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GN2ZCFY9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Impossible Crumb">
+        <div class="t">The Impossible Crumb</div>
+        <div class="p">$13.99</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GN2M3316" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GN2M3316.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Puerto Rican Kitchen">
+        <div class="t">The Puerto Rican Kitchen</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GMWDJC5L" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GMWDJC5L.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Skyler the Kite &amp; The String of Love">
+        <div class="t">Skyler the Kite &amp; The String of Love</div>
+        <div class="p">$12.25</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GMWJWBT4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GMWJWBT4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Penny the Caterpillar &amp; The Impossible Dream">
+        <div class="t">Penny the Caterpillar &amp; The Impossible Dream</div>
+        <div class="p">$12.25</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GMQLMPDC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GMQLMPDC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Captain North &amp; The Lost Bunny">
+        <div class="t">Captain North &amp; The Lost Bunny</div>
+        <div class="p">$13.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GMQCSFV5" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GMQCSFV5.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Builder Ben&#x27;s Unbreakable Dam">
+        <div class="t">Builder Ben&#x27;s Unbreakable Dam</div>
+        <div class="p">$13.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G5DZ1FD3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5DZ1FD3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="A Gift from God">
+        <div class="t">A Gift from God</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4W76B7D" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4W76B7D.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Barnaby Bear and the Great Winter Share">
+        <div class="t">Barnaby Bear and the Great Winter Share</div>
+        <div class="p">$15.25</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GLQ252L4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GLQ252L4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah-Mekaddishkhem: My Sanctifier!">
+        <div class="t">Jehovah-Mekaddishkhem: My Sanctifier!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GLP63ZK8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GLP63ZK8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah RHOI: My Shepherd!">
+        <div class="t">Jehovah RHOI: My Shepherd!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GLNFYV6M" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GLNFYV6M.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah Shemmah: My Ever-Present God!">
+        <div class="t">Jehovah Shemmah: My Ever-Present God!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G1YPX86R" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G1YPX86R.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Seeking First: Matthew 6:33">
+        <div class="t">Seeking First: Matthew 6:33</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GLGXYDWD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GLGXYDWD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="JEHOVAH-TSIDKENU: My Righteousness!">
+        <div class="t">JEHOVAH-TSIDKENU: My Righteousness!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GLGJZFVN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GLGJZFVN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="JEHOVAH-SHALOM: My Peace!">
+        <div class="t">JEHOVAH-SHALOM: My Peace!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKWBQL8Z" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKWBQL8Z.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah Rapha: My Healer!">
+        <div class="t">Jehovah Rapha: My Healer!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKV6ZZX2" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKV6ZZX2.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah Nissi: My Banner!">
+        <div class="t">Jehovah Nissi: My Banner!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKV1QTHT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKV1QTHT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah Jireh: My Provider!">
+        <div class="t">Jehovah Jireh: My Provider!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKPY8HNC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKPY8HNC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jehovah: Eternal, Permanent, and Self-Existent!">
+        <div class="t">Jehovah: Eternal, Permanent, and Self-Existent!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKNYBVNF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKNYBVNF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="ADONAI: Owner of My Life!">
+        <div class="t">ADONAI: Owner of My Life!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKMTZQR8" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKMTZQR8.jpg" width="400" height="600" loading="lazy" decoding="async" alt="EL SHADDAI: All-Sufficient!">
+        <div class="t">EL SHADDAI: All-Sufficient!</div>
+        <div class="p">$14.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKGDC1X5" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKGDC1X5.jpg" width="400" height="600" loading="lazy" decoding="async" alt="ELOHIM The Creator">
+        <div class="t">ELOHIM The Creator</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GKFFY4VQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GKFFY4VQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="EL-ALMIGHTY GOD!">
+        <div class="t">EL-ALMIGHTY GOD!</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GK6H858F" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GK6H858F.jpg" width="400" height="600" loading="lazy" decoding="async" alt="FLOUR &amp; FROSTING: The Ultimate Kids&#x27; Baking Book">
+        <div class="t">FLOUR &amp; FROSTING: The Ultimate Kids&#x27; Baking Book</div>
+        <div class="p">$12.75</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0GJZR832L" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GJZR832L.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Sharing God&#x27;s Love">
+        <div class="t">Sharing God&#x27;s Love</div>
+        <div class="p">$14.75</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FY3N357X" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY3N357X.jpg" width="400" height="600" loading="lazy" decoding="async" alt="David and Goliath">
+        <div class="t">David and Goliath</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FXWJVQ8S" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXWJVQ8S.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Leo and Mia&#x27;s Grand Learning Adventure">
+        <div class="t">Leo and Mia&#x27;s Grand Learning Adventure</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FY1SMBLG" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY1SMBLG.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Amin&#x27;s Sky Soar">
+        <div class="t">Amin&#x27;s Sky Soar</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GHSPJTPX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHSPJTPX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="FLOUR &amp; FIRE: Elevated Rustic Italian">
+        <div class="t">FLOUR &amp; FIRE: Elevated Rustic Italian</div>
+        <div class="p">$13.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FY267CGH" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY267CGH.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Talia&#x27;s Starry Prayer">
+        <div class="t">Talia&#x27;s Starry Prayer</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G1YX9VKS" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G1YX9VKS.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Grateful Goose&#x27;s Feast">
+        <div class="t">The Grateful Goose&#x27;s Feast</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GHF34JYD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GHF34JYD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Herman&#x27;s Shiny Shell">
+        <div class="t">Herman&#x27;s Shiny Shell</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FXTFMZX4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXTFMZX4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Creation God&#x27;s Super-Duper Week">
+        <div class="t">Creation God&#x27;s Super-Duper Week</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GH87PTN7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GH87PTN7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Pippin Puffs Up">
+        <div class="t">Pippin Puffs Up</div>
+        <div class="p">$13.50</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G4R6W5MJ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4R6W5MJ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Loving Father and His Two Sons">
+        <div class="t">The Loving Father and His Two Sons</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4LXB397" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4LXB397.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Heartbeat of the Neighborhood: Kai&#x27;s Barbershop Journey">
+        <div class="t">The Heartbeat of the Neighborhood: Kai&#x27;s Barbershop Journey</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4GTLKFZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4GTLKFZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Zuri the Little Scientist and the Ladybug Spot">
+        <div class="t">Zuri the Little Scientist and the Ladybug Spot</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G4CCJJJG" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4CCJJJG.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Secret of the Garden">
+        <div class="t">The Secret of the Garden</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G48K3HQ1" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G48K3HQ1.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Tower of Babel">
+        <div class="t">The Tower of Babel</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G471VWDQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G471VWDQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Seed of Worry">
+        <div class="t">The Seed of Worry</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GFDSNH3S" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GFDSNH3S.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Smoke &amp; Oak: Elevated Barbecue &amp; Bourbon">
+        <div class="t">Smoke &amp; Oak: Elevated Barbecue &amp; Bourbon</div>
+        <div class="p">$12.25</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GFJL2YHD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GFJL2YHD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="TIDE &amp; TABLE: Elevated Coastal Cuisine">
+        <div class="t">TIDE &amp; TABLE: Elevated Coastal Cuisine</div>
+        <div class="p">$12.50</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GG6JXPLQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GG6JXPLQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Salt And Sea: Elevated Coastal Cuisine">
+        <div class="t">Salt And Sea: Elevated Coastal Cuisine</div>
+        <div class="p">$13.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3LZVDBD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3LZVDBD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Finley&#x27;s Fidgety Spots">
+        <div class="t">Finley&#x27;s Fidgety Spots</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3LV1BKY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3LV1BKY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Sunflower Secret">
+        <div class="t">The Sunflower Secret</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3H8FX6W" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3H8FX6W.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Shelby&#x27;s Speed Secret">
+        <div class="t">Shelby&#x27;s Speed Secret</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GF1YGX2X" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GF1YGX2X.jpg" width="400" height="600" loading="lazy" decoding="async" alt="SMOKE &amp; SEAR Elevated Steakhouse Classics">
+        <div class="t">SMOKE &amp; SEAR Elevated Steakhouse Classics</div>
+        <div class="p">$11.99</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G33BX6FN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G33BX6FN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Freddie the Fox Who Felt Too Fast">
+        <div class="t">Freddie the Fox Who Felt Too Fast</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G2CCQ1RC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2CCQ1RC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Little Engineer Who Couldn&#x27;t Wait">
+        <div class="t">The Little Engineer Who Couldn&#x27;t Wait</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GDQJ5141" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GDQJ5141.jpg" width="400" height="600" loading="lazy" decoding="async" alt="CRISP &amp; COMFORT: Elevated Air Fryer Classics">
+        <div class="t">CRISP &amp; COMFORT: Elevated Air Fryer Classics</div>
+        <div class="p">$13.50</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GDQBVJ5N" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GDQBVJ5N.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Tides &amp; Traditions: Elevated Seafood Classics">
+        <div class="t">Tides &amp; Traditions: Elevated Seafood Classics</div>
+        <div class="p">$12.50</div>
+      </a>
+      <a class="cat-book" data-cat="cookbooks" href="https://www.amazon.com/dp/B0GDLQ8GFY" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GDLQ8GFY.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Heritage &amp; Heat: Elevated Mexican Classics">
+        <div class="t">Heritage &amp; Heat: Elevated Mexican Classics</div>
+        <div class="p">$14.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GDFQQSWP" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GDFQQSWP.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Ella and the Quiet Rumble">
+        <div class="t">Ella and the Quiet Rumble</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GDFPCCX6" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GDFPCCX6.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Owl Who Loved the Day">
+        <div class="t">The Owl Who Loved the Day</div>
+        <div class="p">$14.85</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GD77WRVQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GD77WRVQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Shark Who Needed Glasses">
+        <div class="t">The Shark Who Needed Glasses</div>
+        <div class="p">$14.65</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCZR4ZBQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCZR4ZBQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Simon&#x27;s Nutty Rescue">
+        <div class="t">Simon&#x27;s Nutty Rescue</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G2HFYTL4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2HFYTL4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Blessed Path">
+        <div class="t">The Blessed Path</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCW3F8H5" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCW3F8H5.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Detective Paws and the Case of the Missing Squeak">
+        <div class="t">Detective Paws and the Case of the Missing Squeak</div>
+        <div class="p">$15.10</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCWFGMGD" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCWFGMGD.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Willow&#x27;s Heavy Words">
+        <div class="t">Willow&#x27;s Heavy Words</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FZ93T68W" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FZ93T68W.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Shemaiah and Tia&#x27;s Splashy Spa Surprise">
+        <div class="t">Shemaiah and Tia&#x27;s Splashy Spa Surprise</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCRX4MRQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCRX4MRQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Chatter&#x27;s Banana Phone Adventure">
+        <div class="t">Chatter&#x27;s Banana Phone Adventure</div>
+        <div class="p">$14.90</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCM3HXGQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCM3HXGQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Simon Squirrel&#x27;s Winter Ride">
+        <div class="t">Simon Squirrel&#x27;s Winter Ride</div>
+        <div class="p">$14.60</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GCHYKQ61" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GCHYKQ61.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Girl Who Planted a Raincloud">
+        <div class="t">The Girl Who Planted a Raincloud</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GC86XJT9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GC86XJT9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Antique Shop of Unfinished Things">
+        <div class="t">The Antique Shop of Unfinished Things</div>
+        <div class="p">$12.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GC7JC1SV" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GC7JC1SV.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Officer Owl and the Missing Moon">
+        <div class="t">Officer Owl and the Missing Moon</div>
+        <div class="p">$13.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0GC77TFJR" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0GC77TFJR.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Pip&#x27;s Golden Acorn">
+        <div class="t">Pip&#x27;s Golden Acorn</div>
+        <div class="p">$15.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FXXNG2PN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXXNG2PN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jomo&#x27;s River Bounty">
+        <div class="t">Jomo&#x27;s River Bounty</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FXTQXS7P" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXTQXS7P.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Maple&#x27;s Hidden Island Hop">
+        <div class="t">Maple&#x27;s Hidden Island Hop</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G9S9XXN7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G9S9XXN7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Dino-Nugget Dave: The Dinosaur Who Refused Dinner">
+        <div class="t">Dino-Nugget Dave: The Dinosaur Who Refused Dinner</div>
+        <div class="p">$14.60</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G9SR81H3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G9SR81H3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Yuri the Yeti and the Power of Yet">
+        <div class="t">Yuri the Yeti and the Power of Yet</div>
+        <div class="p">$14.50</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G9M4BVZ3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G9M4BVZ3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Grumble-Bee Who Found His Buzz">
+        <div class="t">The Grumble-Bee Who Found His Buzz</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G8JMRHSL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G8JMRHSL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Unicorn Coloring Book">
+        <div class="t">The Unicorn Coloring Book</div>
+        <div class="p">$10.50</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G7KVTLVL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G7KVTLVL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Fruit Word Puzzle">
+        <div class="t">Fruit Word Puzzle</div>
+        <div class="p">$13.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G7JMV8NK" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G7JMV8NK.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Nocturnal Friend: Oliver&#x27;s Brightest Day">
+        <div class="t">The Nocturnal Friend: Oliver&#x27;s Brightest Day</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G6ZB6R7C" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6ZB6R7C.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Smallest Hero">
+        <div class="t">The Smallest Hero</div>
+        <div class="p">$13.25</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G6Z2H7L3" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6Z2H7L3.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Simon Saves The Day">
+        <div class="t">Simon Saves The Day</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G6TXCVCP" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6TXCVCP.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Leo and the Loud Library">
+        <div class="t">Leo and the Loud Library</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G6RZ217V" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6RZ217V.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Worry Whales and Milo&#x27;s Map">
+        <div class="t">The Worry Whales and Milo&#x27;s Map</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G6KFD28L" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6KFD28L.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Animal Crossword Puzzle">
+        <div class="t">Animal Crossword Puzzle</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G6F75G2D" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G6F75G2D.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Farmer and the Seeds">
+        <div class="t">The Farmer and the Seeds</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G64RK5C9" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G64RK5C9.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Generations of Grace">
+        <div class="t">Generations of Grace</div>
+        <div class="p">$15.99</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G5Z66BW7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5Z66BW7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Kofi and Kwame: Brothers Through Thick and Thin">
+        <div class="t">Kofi and Kwame: Brothers Through Thick and Thin</div>
+        <div class="p">$13.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G5Y6ZDXZ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5Y6ZDXZ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Rusty the Rafter Squirrel and the Library Mystery">
+        <div class="t">Rusty the Rafter Squirrel and the Library Mystery</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G5PKR3WF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5PKR3WF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Secret of the Sacred Scroll">
+        <div class="t">The Secret of the Sacred Scroll</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G5K73YDQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5K73YDQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Ferdinand and the Ticklish Secret">
+        <div class="t">Ferdinand and the Ticklish Secret</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G5FQYLVF" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5FQYLVF.jpg" width="400" height="600" loading="lazy" decoding="async" alt="We Love Because He First Loved Us: 1 John 4:19">
+        <div class="t">We Love Because He First Loved Us: 1 John 4:19</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G5GD6MX4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G5GD6MX4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Remy Raccoon and the Quiet Forest">
+        <div class="t">Remy Raccoon and the Quiet Forest</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G588485P" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G588485P.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Rupert&#x27;s Invisible Bridge and the Valley of Lost Things">
+        <div class="t">Rupert&#x27;s Invisible Bridge and the Valley of Lost Things</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4W4MGMT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4W4MGMT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Eli and the Mystery Skree-eek!">
+        <div class="t">Eli and the Mystery Skree-eek!</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4VSMLHQ" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4VSMLHQ.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Wally the Wombat Who Couldn&#x27;t Wait">
+        <div class="t">Wally the Wombat Who Couldn&#x27;t Wait</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4VRNPCX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4VRNPCX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Littlest Lamb Who Couldn&#x27;t Sleep">
+        <div class="t">The Littlest Lamb Who Couldn&#x27;t Sleep</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G4R7HTTH" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G4R7HTTH.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Felix Finds His Song">
+        <div class="t">Felix Finds His Song</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3QMLP9J" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3QMLP9J.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Hive&#x27;s Great Data Disaster">
+        <div class="t">The Hive&#x27;s Great Data Disaster</div>
+        <div class="p">$15.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G3F88V4S" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G3F88V4S.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Missing Moonbeam">
+        <div class="t">Missing Moonbeam</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G39QQMRT" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G39QQMRT.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Penny the Planner and the Wobbly Bridge">
+        <div class="t">Penny the Planner and the Wobbly Bridge</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G397NWXV" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G397NWXV.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Worry Cloud in My Tummy">
+        <div class="t">The Worry Cloud in My Tummy</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G356DQD4" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G356DQD4.jpg" width="400" height="600" loading="lazy" decoding="async" alt="My Heart Is Happy: A Little Book of God&#x27;s Blessings">
+        <div class="t">My Heart Is Happy: A Little Book of God&#x27;s Blessings</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G2XRXHBC" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2XRXHBC.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Little Seed Who Wouldn&#x27;t Grow">
+        <div class="t">The Little Seed Who Wouldn&#x27;t Grow</div>
+        <div class="p">$13.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G2SZYWNS" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2SZYWNS.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Day the Scribbly Crayon Found Its Color">
+        <div class="t">The Day the Scribbly Crayon Found Its Color</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G2T18WQG" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2T18WQG.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Loudest Whisper">
+        <div class="t">The Loudest Whisper</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G2RT3V4X" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2RT3V4X.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Golden Rule: Treat Others As You Wish To Be Treated">
+        <div class="t">The Golden Rule: Treat Others As You Wish To Be Treated</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G2JV37MH" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2JV37MH.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Prayer of Salvation: Romans 10:9-10">
+        <div class="t">The Prayer of Salvation: Romans 10:9-10</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G2J33FM7" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2J33FM7.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Lord&#x27;s Blessing: Riches with No Sorrow">
+        <div class="t">The Lord&#x27;s Blessing: Riches with No Sorrow</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G2H7H353" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2H7H353.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Trains Coloring Book">
+        <div class="t">Trains Coloring Book</div>
+        <div class="p">$12.99</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G2GV1T4J" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2GV1T4J.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Christmas Coloring Book">
+        <div class="t">Christmas Coloring Book</div>
+        <div class="p">$12.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G2GDCWF5" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2GDCWF5.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Grandma Sara&#x27;s Prayer Power">
+        <div class="t">Grandma Sara&#x27;s Prayer Power</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G2CTRB42" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G2CTRB42.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Counting Stars: Luna&#x27;s Cosmic Adventure">
+        <div class="t">Counting Stars: Luna&#x27;s Cosmic Adventure</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G292JLNN" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G292JLNN.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Sebastian&#x27;s Fuzzies: A Cat&#x27;s Guide to Human Management">
+        <div class="t">Sebastian&#x27;s Fuzzies: A Cat&#x27;s Guide to Human Management</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G25M1PBR" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G25M1PBR.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Grumbles That Went to Sleep">
+        <div class="t">The Grumbles That Went to Sleep</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0G1ZF55QK" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G1ZF55QK.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Thankful Tractor">
+        <div class="t">The Thankful Tractor</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0G1Z1688H" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G1Z1688H.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Henrietta, the Chicken Who Thought She Was a Superhero">
+        <div class="t">Henrietta, the Chicken Who Thought She Was a Superhero</div>
+        <div class="p">$16.98</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FY5GW6BL" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY5GW6BL.jpg" width="400" height="600" loading="lazy" decoding="async" alt="The Library Lion Who Forgot How to Roar">
+        <div class="t">The Library Lion Who Forgot How to Roar</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="coloring" href="https://www.amazon.com/dp/B0G14W2XTX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0G14W2XTX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Thanksgiving Coloring Book">
+        <div class="t">Thanksgiving Coloring Book</div>
+        <div class="p">$12.99</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FY3F4GPX" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY3F4GPX.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Elijah and the Widow&#x27;s Son: A Story of Faith and Miracles">
+        <div class="t">Elijah and the Widow&#x27;s Son: A Story of Faith and Miracles</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="childrens" href="https://www.amazon.com/dp/B0FY38MGZW" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FY38MGZW.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Jayden&#x27;s Joyful Hut">
+        <div class="t">Jayden&#x27;s Joyful Hut</div>
+        <div class="p">$14.95</div>
+      </a>
+      <a class="cat-book" data-cat="christian" href="https://www.amazon.com/dp/B0FXTMFS6D" target="_blank" rel="noopener">
+        <img src="https://images-na.ssl-images-amazon.com/images/P/B0FXTMFS6D.jpg" width="400" height="600" loading="lazy" decoding="async" alt="Moses in Egypt and the Exodus">
+        <div class="t">Moses in Egypt and the Exodus</div>
+        <div class="p">$16.99</div>
+      </a>
+    </div>
+    <button class="load-more" id="loadMore">Show more books</button>
+    <p class="catalog-count" id="catalogCount"></p>
+  </div>
+</section>
+
 <section class="why">
   <div class="section-inner">
     <div class="eyebrow" style="color:var(--sky);">Why Parents Love Us</div>
@@ -577,7 +1699,7 @@ footer {
     <div class="cta-books-icons">📚 🌟 📖</div>
     <h2>Ready to Find Your Child's Next Favorite Book?</h2>
     <p>Over 200 titles waiting on Amazon. Fast shipping. Every book crafted with love for the families who read them.</p>
-    <a href="https://www.amazon.com/s?k=kid+story+books+dominion+publishing" target="_blank" class="btn-primary" style="font-size:1.1em;padding:16px 40px;">🛒 Shop All Books on Amazon</a>
+    <a href="#catalog" class="btn-primary" style="font-size:1.1em;padding:16px 40px;">🛒 Shop All Books on Amazon</a>
   </div>
 </section>
 
@@ -596,5 +1718,47 @@ footer {
   <p class="footer-copy">© 2026 Kid Story Books | Dominion Publishing | kidstorybooks.com</p>
 </footer>
 
+
+<script>
+(function(){
+  var PAGE=24, shown=PAGE, filter='all';
+  var grid=document.getElementById('catalogGrid');
+  if(!grid) return;
+  var all=[].slice.call(grid.querySelectorAll('.cat-book'));
+  var more=document.getElementById('loadMore');
+  var count=document.getElementById('catalogCount');
+  function render(){
+    var matched=all.filter(function(el){return filter==='all'||el.dataset.cat===filter;});
+    all.forEach(function(el){el.style.display='none';});
+    matched.slice(0,shown).forEach(function(el){el.style.display='block';});
+    more.style.display = matched.length>shown ? 'block':'none';
+    count.textContent='Showing '+Math.min(shown,matched.length)+' of '+matched.length+' books';
+  }
+  more.addEventListener('click',function(){shown+=PAGE;render();});
+  document.querySelectorAll('.filters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      filter=b.dataset.filter; shown=PAGE;
+      document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      document.querySelectorAll('.cat-card').forEach(function(c){c.classList.remove('active');});
+      render();
+    });
+  });
+  // category tiles higher up the page jump here and filter
+  document.querySelectorAll('.cat-card[data-cat]').forEach(function(c){
+    c.addEventListener('click',function(){
+      var want=c.dataset.cat;
+      var btn=document.querySelector('.filters button[data-filter="'+want+'"]');
+      if(btn){ btn.click(); c.classList.add('active'); }
+    });
+  });
+  // a cover Amazon has no image for should not leave a grey box
+  all.concat([].slice.call(document.querySelectorAll('.book-card img.cover'))).forEach(function(im){
+    var img=im.tagName==='IMG'?im:im.querySelector('img');
+    if(img) img.addEventListener('error',function(){ img.style.visibility='hidden'; });
+  });
+  render();
+})();
+</script>
 </body>
 </html>
