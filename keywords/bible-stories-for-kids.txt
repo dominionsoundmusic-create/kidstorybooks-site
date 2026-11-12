@@ -1,0 +1,4 @@
+SUGGESTIONS
+bible stories for 4 year olds|50|1.15|25;bible story books for 5 year olds|20|0|36;bible story books for 3 year olds|20|0.6|36;stories to tell 6 year olds|10|0|10;bible stories for preschoolers video|10|0|5
+QUESTIONS
+list of bible stories for preschoolers|110|0.16|28;bible story books for 10 year olds|30|0.13|23;how much stories are in the bible|10|0|5;why bible stories are important|10|0|5
