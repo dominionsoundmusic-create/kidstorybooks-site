@@ -68,7 +68,7 @@
 <h2 id="sources-h">Sources</h2>
 <ol>
 {% for s in list %}
-<li>{{ s.org }}, <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.year %} ({{ s.year }}){% endif %}.</li>
+<li>{{ s.org }}, <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.year is defined %} ({{ s.year }}){% endif %}.</li>
 {% endfor %}
 </ol>
 </aside>

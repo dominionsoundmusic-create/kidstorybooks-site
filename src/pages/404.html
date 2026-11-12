@@ -1,0 +1,17 @@
+---
+type: notfound
+noindex: true
+title: "Page Not Found | Kid Story Books"
+description: "That page is not on Kid Story Books. Browse all 220 children's books by Maurice Johnson or pick a topic such as Bible stories or bedtime stories."
+h1: "Oops, that page is not here"
+lead: "The page may have moved when the site was updated. These links will get you back to the books."
+---
+{% block content %}
+<section class="sect">
+<div class="rail">
+<div class="btns"><a class="btn btn--navy" href="/books/">Browse all 220 books</a><a class="btn btn--ghost" href="/">Go to the home page</a></div>
+<h2 style="margin-top:24px">Or pick a topic</h2>
+{{ m.topic_cards() }}
+</div>
+</section>
+{% endblock %}

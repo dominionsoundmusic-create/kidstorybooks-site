@@ -1,0 +1,68 @@
+---
+type: books
+title: "Children's Books List: All 220 Kid Story Books Titles"
+description: "The full children's books list from Kid Story Books: all 220 titles by Maurice Johnson. Filter by category or search by title, then buy on Amazon."
+h1: "Children's Books List: All 220 Titles"
+crumb: "All books"
+lead: "Every book by Maurice Johnson in one children's books list. Filter by shelf or search by title, then tap Buy on Amazon."
+cta1: {label: "Search the list", href: "#book-search"}
+cta2: {label: "Shop on Amazon", href: "https://www.amazon.com/author/dominionpublishing"}
+hero_color: sky
+hero_books: [B0H1RXJJLL, B0GKWBQL8Z, B0GY8VFHB8, B0GWHM9SZX, B0G2GV1T4J, B0GPWDCC7Q, B0G6Z2H7L3, B0FXRKJ5K3]
+faq_title: "Questions about the book list"
+faqs:
+  - q: "How many books are on the children's books list?"
+    a: "220 books: 71 children's stories, 65 Christian books, 34 nature and science books, 32 cookbooks, 9 coloring and activity books and 9 books for teens."
+  - q: "Can I search for a book by title?"
+    a: "Yes. Type any word from the title in the search box, such as Noah, bear, moon or lifecycle, and the list narrows as you type. You can also tap a shelf button to show one category."
+  - q: "Where do I buy a book from the list?"
+    a: "Tap Buy on Amazon under any book. The book's Amazon page opens in a new tab, where you can see the formats, price and delivery options."
+---
+{% block content %}
+<section class="sect">
+<div class="rail">
+<p class="lede">This children's books list holds all {{ all_books | length }} titles. Tap a shelf to narrow it down, or type a word from the title.</p>
+<div class="tools" role="search">
+<div class="btns" role="group" aria-label="Filter by shelf">
+<button type="button" class="filter" data-filter="all" aria-pressed="true">All ({{ all_books | length }})</button>
+{% for c in site.categories %}
+<button type="button" class="filter" data-filter="{{ c.key }}" aria-pressed="false">{{ c.label }} ({{ count(c.key) }})</button>
+{% endfor %}
+</div>
+<label class="search"><span>Search</span><input type="search" id="book-search" placeholder="Title word, like moon" autocomplete="off"></label>
+</div>
+<p class="count" id="book-count" aria-live="polite">Showing all {{ all_books | length }} books</p>
+<div class="books" id="book-list">
+{% for b in all_books %}
+{{ m.book_card(b) }}
+{% endfor %}
+</div>
+<div class="more"><button type="button" class="btn btn--navy" id="show-more" hidden>Show more books</button></div>
+<p>Looking for a topic instead? Try <a href="/christian-childrens-books/">Christian children's books</a>, <a href="/bible-story-books-for-kids/">Bible stories</a>, <a href="/bedtime-stories-for-kids/">bedtime stories</a> or <a href="/nature-books-for-kids/">nature books</a>.</p>
+</div>
+</section>
+<script>
+(function(){
+  var BATCH=48, shown=BATCH, filter='all', q='';
+  var cards=[].slice.call(document.querySelectorAll('#book-list .book'));
+  var more=document.getElementById('show-more'), count=document.getElementById('book-count');
+  var input=document.getElementById('book-search');
+  function apply(){
+    var match=cards.filter(function(c){return (filter==='all'||c.dataset.cat===filter)&&(!q||c.dataset.title.indexOf(q)>-1);});
+    cards.forEach(function(c){c.hidden=true;});
+    match.slice(0,shown).forEach(function(c){c.hidden=false;});
+    more.hidden=match.length<=shown;
+    count.textContent=match.length?('Showing '+Math.min(shown,match.length)+' of '+match.length+' books'):'No books match that search. Try another word.';
+  }
+  document.querySelectorAll('.filter').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.filter').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    filter=b.dataset.filter; shown=BATCH; apply();});});
+  input.addEventListener('input',function(){q=input.value.trim().toLowerCase(); shown=BATCH; apply();});
+  more.addEventListener('click',function(){shown+=BATCH; apply();});
+  apply();
+})();
+</script>
+{% endblock %}
+{% block after %}
+{{ m.amazon_cta() }}
+{% endblock %}

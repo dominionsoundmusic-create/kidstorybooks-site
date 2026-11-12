@@ -26,3 +26,6 @@
 /blog/*  /  301
 /blog  /  301
 
+
+# Nov 12 2026 redesign: privacy policy moved to a folder URL.
+/privacy-policy.html  /privacy-policy/  301

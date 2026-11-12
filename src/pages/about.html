@@ -1,0 +1,61 @@
+---
+type: about
+title: "About Maurice Johnson, Children's Author | Kid Story Books"
+description: "About Maurice Johnson, the Christian children's author from East Texas behind Kid Story Books and Dominion Publishing, with 220 books sold on Amazon."
+h1: "About Maurice Johnson, Children's Author"
+crumb: "About"
+lead: "Maurice Johnson is a Christian children's author in East Texas. He writes the books on this site and publishes them under Dominion Publishing."
+cta1: {label: "Browse all 220 books", href: "/books/"}
+cta2: {label: "Amazon author page", href: "https://www.amazon.com/author/dominionpublishing"}
+hero_books: [B0GKGDC1X5, B0G3TPMGWW, B0GXDZ6TNW, B0FXRGGS7M, B0GPWDCC7Q, B0G2GV1T4J, B0GV8LW9WT, B0GTZK4KQ4]
+faqs:
+  - q: "Who is Maurice Johnson?"
+    a: "Maurice Johnson is the author of every book on Kid Story Books. He is a Christian author based in East Texas, and his books are published by Dominion Publishing."
+  - q: "What is Dominion Publishing?"
+    a: "Dominion Publishing is the name on Maurice Johnson's books. It is part of Dominion Digital Group."
+  - q: "Can I buy books directly from this website?"
+    a: "No. This site has no cart or checkout. Each Buy on Amazon button opens that book's page on Amazon, where you order it."
+  - q: "How can I contact Kid Story Books?"
+    a: "Send a message through the Message button on the Kid Story Books Facebook page. You can also follow along on Instagram and TikTok."
+---
+{% block content %}
+<section class="sect">
+<div class="rail split">
+<div>
+<h2>Maurice Johnson, children's author and publisher</h2>
+<p class="lede">Maurice Johnson is the children's author behind every title on this site. He lives in East Texas and publishes his books through Dominion Publishing, part of Dominion Digital Group.</p>
+<p>Maurice is a Christian, and faith runs through much of his work. Sixty-five of his books are Christian titles, including Bible stories, books on the names of God, and stories about prayer, grace and thankful hearts.</p>
+<p>He also writes far beyond Sunday school. His catalogue includes children's stories about animals, family and feelings; nature and life cycle books; coloring and puzzle books; cookbooks; and books for teens.</p>
+</div>
+{{ m.collage(["B0GKGDC1X5", "B0G3TPMGWW", "B0GXDZ6TNW", "B0GPWDCC7Q"], "A writer's desk with children's book drafts and colored pencils", "collage--2") }}
+</div>
+</section>
+
+<section class="band band--sky">
+<div class="rail">
+<h2>The catalogue at a glance</h2>
+<ul class="tips">
+{% for c in site.categories %}
+<li><strong>{{ c.label }}</strong>{{ count(c.key) }} books. {% if c.key == 'childrens' %}Animal stories, family stories and books about feelings.{% elif c.key == 'christian' %}Bible stories, God's names, prayer and thankfulness.{% elif c.key == 'nature' %}Life cycles, plants, trees and the five senses.{% elif c.key == 'cookbooks' %}Southern baking, soul food, barbecue, coastal and more.{% elif c.key == 'coloring' %}Holiday, theme and puzzle books.{% else %}Quiet Strength, affirmations and Black history.{% endif %}</li>
+{% endfor %}
+</ul>
+</div>
+</section>
+
+<section class="sect">
+<div class="rail split split--rev">
+{{ m.collage(["B0FXRGGS7M", "B0GKV1QTHT", "B0G2RT3V4X", "B0GT4VC6ZP", "B0G5FQYLVF", "B0FY267CGH"], "Covers of six Christian children's books by Maurice Johnson") }}
+<div>
+<h2>Why a site that sends you to Amazon</h2>
+<p>Kid Story Books is a front door to Maurice's books, not a store. Amazon handles the printing, payment and delivery, and each book's Amazon page shows the formats and price that are available right now.</p>
+<p>That keeps things simple for parents, grandparents, teachers and churches: find a book here, then buy it on Amazon the way you already shop.</p>
+<blockquote class="verse" data-ref="Matthew 19:14"><p>"But Jesus said, Suffer little children, and forbid them not, to come unto me: for of such is the kingdom of heaven."</p><cite>Matthew 19:14 (KJV)</cite></blockquote>
+<h3>Say hello</h3>
+<p>The best way to reach Kid Story Books is the Message button on the <a href="https://www.facebook.com/bestkidstorybooks" target="_blank" rel="noopener">Facebook page</a>. You can also follow on <a href="https://www.instagram.com/bestkidstorybooks/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.tiktok.com/@bestkidstorybooks" target="_blank" rel="noopener">TikTok</a>.</p>
+</div>
+</div>
+</section>
+{% endblock %}
+{% block after %}
+{{ m.amazon_cta() }}
+{% endblock %}

@@ -7,39 +7,87 @@ it appears (with WebP copies at 480/800/1200/1600/1920 wide made automatically).
 
 Heroes: none needed. Every hero uses a collage of real covers, so all photos are in-body.
 
-Total: 4 photos.
+Total: 10 photos.
 
 | # | File name | Size | Page(s) |
 |---|---|---|---|
-| 1 | bedtime-stories-night-light.jpg | 1200x800 in-body | / |
-| 2 | bible-story-books-open-on-rug.jpg | 1200x800 in-body | / |
-| 3 | christian-childrens-books-family-reading.jpg | 1200x800 in-body | / |
-| 4 | nature-books-for-kids-garden.jpg | 1200x800 in-body | / |
+| 1 | bedtime-stories-for-kids-reading-nook.jpg | 1200x800 in-body | /bedtime-stories-for-kids/ |
+| 2 | bedtime-stories-night-light.jpg | 1200x800 in-body | / |
+| 3 | bible-stories-for-preschoolers-story-time.jpg | 1200x800 in-body | /bible-story-books-for-kids/ |
+| 4 | bible-story-books-open-on-rug.jpg | 1200x800 in-body | / |
+| 5 | christian-childrens-books-family-reading.jpg | 1200x800 in-body | / |
+| 6 | christian-childrens-books-reading-chair.jpg | 1200x800 in-body | /christian-childrens-books/ |
+| 7 | coloring-books-for-kids-art-table.jpg | 1200x800 in-body | /coloring-books-for-kids/ |
+| 8 | nature-books-for-kids-backyard-explorer.jpg | 1200x800 in-body | /nature-books-for-kids/ |
+| 9 | nature-books-for-kids-garden.jpg | 1200x800 in-body | / |
+| 10 | picture-books-for-kindergarteners-reading-rug.jpg | 1200x800 in-body | /picture-books-for-kindergarten/ |
 
-## 1. bedtime-stories-night-light.jpg
+## 1. bedtime-stories-for-kids-reading-nook.jpg
+
+- Size: 1200x800 px
+- Alt text: A quiet bedroom reading nook with picture books and a warm lamp
+
+Artistly prompt: A calm child's bedroom corner at dusk with a low bookshelf of picture books, a soft beanbag, a knitted blanket and a warm lamp glowing, window showing a dark blue evening sky with stars. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 2. bedtime-stories-night-light.jpg
 
 - Size: 1200x800 px
 - Alt text: A child's bed with a picture book and a warm night light
 
 Artistly prompt: A tidy child's bed with a soft quilt, a picture book lying open on the pillow and a warm moon-shaped night light glowing on the nightstand. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
 
-## 2. bible-story-books-open-on-rug.jpg
+## 3. bible-stories-for-preschoolers-story-time.jpg
+
+- Size: 1200x800 px
+- Alt text: A church classroom story corner with a felt board and Bible story books
+
+Artistly prompt: A bright church classroom story corner with small chairs in a half circle, a felt board with a cut-out ark and rainbow, and a stack of colorful children's Bible story books on a low table. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 4. bible-story-books-open-on-rug.jpg
 
 - Size: 1200x800 px
 - Alt text: Open children's Bible story books on a play rug
 
 Artistly prompt: Two open children's picture books with bright pages lying on a colorful play rug, a toy wooden ark and small animal figures beside them. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
 
-## 3. christian-childrens-books-family-reading.jpg
+## 5. christian-childrens-books-family-reading.jpg
 
 - Size: 1200x800 px
 - Alt text: A cozy reading corner with a stack of Christian children's books
 
 Artistly prompt: A sunny living-room reading nook with a soft rug, floor cushions and a stack of colorful children's picture books next to a small wooden cross on a low shelf. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
 
-## 4. nature-books-for-kids-garden.jpg
+## 6. christian-childrens-books-reading-chair.jpg
+
+- Size: 1200x800 px
+- Alt text: A grandparent's reading chair with Christian children's books on a side table
+
+Artistly prompt: A cozy armchair with a patchwork quilt beside a window, a side table holding a stack of colorful Christian children's picture books and a small open Bible, morning sunlight. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 7. coloring-books-for-kids-art-table.jpg
+
+- Size: 1200x800 px
+- Alt text: A kids' art table with open coloring books and a cup of crayons
+
+Artistly prompt: A bright kids' art table by a sunny window with two open coloring books half colored in, a cup of chunky crayons, a few loose markers and colorful paper scraps. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 8. nature-books-for-kids-backyard-explorer.jpg
+
+- Size: 1200x800 px
+- Alt text: A child's backyard nature kit with a nature book, magnifying glass and seedlings
+
+Artistly prompt: A sunny backyard garden bed with small seedlings in pots, a child-size magnifying glass, a bug jar and an open children's nature book on a wooden step, butterflies in soft focus. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 9. nature-books-for-kids-garden.jpg
 
 - Size: 1200x800 px
 - Alt text: Nature books for kids on a garden table with a magnifying glass
 
 Artistly prompt: A bright garden table with children's nature books, a kid's magnifying glass, a small potted bean sprout and a butterfly resting on a flower. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
+
+## 10. picture-books-for-kindergarteners-reading-rug.jpg
+
+- Size: 1200x800 px
+- Alt text: A kindergarten reading rug with picture books spread out
+
+Artistly prompt: A bright kindergarten classroom reading rug with colorful alphabet squares, picture books spread open on the floor, a basket of stuffed animals and a low bookshelf in sunny light. Bright, cheerful, clearly visible, children's books, no text, no logos, no recognizable faces, subject positioned on right third of frame, well lit.
