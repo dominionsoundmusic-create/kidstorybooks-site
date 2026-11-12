@@ -69,7 +69,7 @@ function serve() {
           }
         }
         // Empty vertical bands: union of y-ranges of visible content leaves inside <main>.
-        const sel = 'main h1, main h2, main h3, main p, main li, main .cover, main .btn, main img, main figure, main input, main .tcard, main .book';
+        const sel = 'main h1, main h2, main h3, main p, main li, main .cover, main .btn, main img, main figure, main input, main .tcard, main .book, main cite, main blockquote, main .ccard__body > span, main .ccard';
         const spans = [];
         for (const el of document.querySelectorAll(sel)) {
           const r = el.getBoundingClientRect();
