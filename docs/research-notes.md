@@ -1,0 +1,275 @@
+Research method: WebSearch results only; source pages could not be opened in this session (network policy).
+
+Notes on this file (2026-11-12):
+- "Search result says" is the wording the search tool returned, attributed by the tool to that URL. It is not a verified page quote. Before publishing, check any sentence used on the site against the live page.
+- CONFIDENCE high: the search tool clearly stated it as coming from that organization's own domain. CONFIDENCE low: the number is uncertain, the attribution is unclear, it is a secondary citation, or the source has a conflict of interest.
+- Quote marks inside "Search result says" show text the tool presented as page wording. Text without inner quote marks is the tool's own paraphrase.
+
+## general
+- Fact: The American Academy of Pediatrics (AAP) recommends shared reading starting at birth and continuing at least through kindergarten.
+  - Source: American Academy of Pediatrics, "Literacy Promotion: An Essential Component of Primary Care Pediatric Practice: Policy Statement", 2024 (Pediatrics 154(6), e2024069090; replaces the 2014 statement), https://publications.aap.org/pediatrics/article/154/6/e2024069090/199467/Literacy-Promotion-An-Essential-Component-of
+  - Search result says: "The policy statement includes the following recommendations for how pediatricians and pediatric advanced care providers can promote literacy development at health supervision visits from the newborn period at least through kindergarten."
+  - CONFIDENCE: high
+- Fact: The AAP describes reading aloud from birth as a way for parents to have warm, close, word-rich time with their child.
+  - Source: AAP News, "AAP policy: Literacy promotion vital part of primary care; funding is key", 2024, https://publications.aap.org/aapnews/news/29989/AAP-policy-Literacy-promotion-vital-part-of
+  - Search result says: reading aloud with young children, starting at birth, offers parents and caregivers "strength-based strategies that promote positive, intimate, and language-rich interactions."
+  - CONFIDENCE: high (exact page attribution between the policy statement and the AAP News article is uncertain; both are AAP)
+- Fact: The 2014 AAP policy statement on literacy promotion exists, and the 2024 statement revises it.
+  - Source: AAP, "Literacy Promotion: An Essential Component of Primary Care Pediatric Practice", 2014 (Pediatrics 134(2):404), https://publications.aap.org/pediatrics/article/134/2/404/32944/Literacy-Promotion-An-Essential-Component-of
+  - Search result says: the 2024 statement "is a revision of the AAP's 2014 policy."
+  - CONFIDENCE: high
+- Fact: Reach Out and Read says children who are read to more often have better language and listening skills and stronger emotional bonds with loved ones.
+  - Source: Reach Out and Read, "Child Development", https://reachoutandread.org/why-we-matter/child-development/
+  - Search result says: children who are read to more often "have improved language and listening skills, experience stronger emotional connections to their loved ones, and gain a lifelong love of reading."
+  - CONFIDENCE: high (page attribution within reachoutandread.org is approximate)
+- Fact: Reach Out and Read says even the youngest babies love being held close and hearing a loved one's voice reading aloud.
+  - Source: Reach Out and Read, "Family Resources", https://reachoutandread.org/family-resources/
+  - Search result says: "even the youngest babies love to be held close and hear the voice of a loved one as they read a book aloud."
+  - CONFIDENCE: high (page attribution within reachoutandread.org is approximate)
+- Fact: More than 80 percent of a child's brain forms in the first three years.
+  - Source: Reach Out and Read, "Expert Tips and Activities for Baby Brain Development", 2024, https://reachoutandread.org/2024/08/07/expert-tips-and-activities-for-baby-brain-development/
+  - Search result says: Reach Out and Read's CEO notes that "more than 80 percent of a child's brain is formed during the first three years."
+  - CONFIDENCE: low (a precise number, quoted from one person, not confirmed by a second result)
+
+## bedtime-stories-for-kids
+- Fact: The AAP's "Brush, Book, Bed" routine means brushing teeth, then reading a favorite book or two, then going to bed.
+  - Source: HealthyChildren.org (AAP), "Brush, Book, Bed: How to Structure Your Child's Nighttime Routine", https://www.healthychildren.org/English/healthy-living/oral-health/Pages/Brush-Book-Bed.aspx
+  - Search result says: "read a favorite book (or two) after toothbrushing and before bed."
+  - CONFIDENCE: high
+- Fact: The AAP advises no screens for the hour before bedtime and keeping screens out of children's bedrooms.
+  - Source: HealthyChildren.org (AAP), "Healthy Sleep Habits: How Many Hours Does Your Child Need?", https://www.healthychildren.org/English/healthy-living/sleep/Pages/healthy-sleep-habits-how-many-hours-does-your-child-need.aspx (also the AAP page "Screen Time Affecting Sleep", https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/screen-time-affecting-sleep/)
+  - Search result says: the AAP advises no screens for the hour before bedtime, and "recommends keeping all screens—TVs, computers, laptops, tablets and phones out of children's bedrooms, especially at night."
+  - CONFIDENCE: high
+- Fact: Children ages 3 to 5 need 10 to 13 hours of sleep in 24 hours, naps included.
+  - Source: CDC, "About Sleep", https://www.cdc.gov/sleep/about/index.html; CDC, "Positive Parenting Tips: Preschoolers (3–5 years old)", https://www.cdc.gov/child-development/positive-parenting-tips/preschooler-3-5-years.html
+  - Search result says: "10–13 hours per 24 hours (including naps) for preschoolers 3–5 years old."
+  - CONFIDENCE: high (two CDC pages agree)
+- Fact: A bedtime routine is a set of the same calm activities, such as reading, brushing teeth and bathing, done every night in the hour before lights out.
+  - Source: Mindell JA & Williamson AA, "Benefits of a bedtime routine in young children: Sleep, development, and beyond", Sleep Medicine Reviews 40:93–108, 2018, https://pmc.ncbi.nlm.nih.gov/articles/PMC6587181/
+  - Search result says: "Bedtime routines are defined as a consistent set of caregiver-directed child activities, such as reading books, brushing teeth, and bathing, that occur every night in the hour before lights out."
+  - CONFIDENCE: high (the tool noted this wording was "as cited by later studies", so it may be a paraphrase of the review's definition)
+- Fact: The more often families keep a bedtime routine, the better young children tend to sleep. The review's authors also suggest benefits for bonding and social-emotional growth, but call these hypotheses.
+  - Source: Mindell & Williamson 2018 (same URL as above)
+  - Search result says: "a dose-dependent relationship emerged between a bedtime routine and these sleep benefits"; "bedtime routines are hypothesized to foster parent-child attachment, health behaviors, prosocial development, and social-emotional development."
+  - CONFIDENCE: high for the sleep link; describe the other benefits only as "researchers think", not as proven
+- Fact: Parents can set aside about 10 to 30 minutes a day to read aloud, for example as part of the bedtime routine.
+  - Source: AAP, "FAMILY RESOURCE: Helping Your Child Learn To Read" (PDF), https://downloads.aap.org/AAP/PDF/Early_Childhood_Parent_Resources.pdf
+  - Search result says: "10 to 30 minutes every day for reading books aloud together, perhaps as part of your regular bedtime routine."
+  - CONFIDENCE: low (one PDF; another result gave "20 to 30 minutes"; say "a few minutes to half an hour" rather than a precise figure)
+
+## picture-books-for-kindergarten
+- Fact: An Ohio State study (Logan et al., 2019) found that children whose parents read them five books a day enter kindergarten having heard about 1.4 million more words than children who were never read to.
+  - Source: Ohio State News, "A 'million word gap' for children who aren't read to at home", 2019, https://news.osu.edu/a-million-word-gap-for-children-who-arent-read-to-at-home/
+  - Search result says: young children whose parents read them five books a day "enter kindergarten having heard about 1.4 million more words than kids who were never read to"; Logan said "the million word gap found in this study is likely to be conservative."
+  - CONFIDENCE: high
+- Fact: Research shows that dialogic reading, where the adult asks questions and lets the child help tell the story, builds oral language, vocabulary and comprehension.
+  - Source: Reading Rockets, "Tutoring Strategies for Preschool and Kindergarten", https://www.readingrockets.org/topics/afterschool-and-community-programs/articles/tutoring-strategies-preschool-and-kindergarten
+  - Search result says: "research shows that dialogic reading builds oral language, vocabulary, and comprehension skills."
+  - CONFIDENCE: high
+- Fact: For kindergartners, Reading Rockets suggests reading an interesting picture book every day along with predictable books and informational books with lots of colorful photos or pictures.
+  - Source: Reading Rockets, "Repeated Interactive Read Alouds in Preschool and Kindergarten", https://www.readingrockets.org/topics/comprehension/articles/repeated-interactive-read-alouds-preschool-and-kindergarten
+  - Search result says: recommends reading "a sophisticated picture book every day" alongside predictable books, and "engaging informational texts with lots of colorful photographs or illustrations that help kindergartners build knowledge about the world."
+  - CONFIDENCE: high (the informational-text line may come from a sibling Reading Rockets page)
+- Fact: Reading the same book several times helps; with each reading, the adult can explain words and ask deeper "why" questions.
+  - Source: Reading Rockets, "Repeated Interactive Read Alouds in Preschool and Kindergarten" (same URL)
+  - Search result says: the model reads the same book multiple times; "Before reading, teachers select 5 to 10 vocabulary words to highlight or define during reading."
+  - CONFIDENCE: high
+- Fact: NAEYC tells families to reread their child's favorite books.
+  - Source: NAEYC, "Fall in Love with Reading: Ten Simple Things you Can Do at Home", https://www.naeyc.org/our-work/families/fall-love-reading
+  - Search result says: "reread your child's favorites, even in different places around the home."
+  - CONFIDENCE: high
+- Fact: When reading aloud, ask the child what is happening in the picture and what will happen next, then ask for more details.
+  - Source: CDC, "Milestones by 5 Years", https://www.cdc.gov/act-early/milestones/5-years.html
+  - Search result says: "Read with your child. Ask questions, such as 'What is happening in the picture?' and/or 'What do you think will happen next?' When she gives you an answer, ask for more details."
+  - CONFIDENCE: high (the exact CDC age page holding this tip is uncertain, 3, 4 or 5 years)
+
+## christian-childrens-books
+- Fact: In a Barna survey, most parents of children under 13 (85%) said they hold primary responsibility for their children's spiritual teaching.
+  - Source: Barna Group, "Parents Accept Responsibility for Their Child's Spiritual Development But Struggle With Effectiveness" (older study, about 2003), https://www.barna.com/research/parents-accept-responsibility-for-their-childs-spiritual-development-but-struggle-with-effectiveness/
+  - Search result says: "85% of parents of children under 13 said they hold primary responsibility for teaching religious beliefs and spiritual matters."
+  - CONFIDENCE: high for "most parents"; use the 85% only with the year once confirmed
+- Fact: In a Barna study done with Cardus, nearly all Protestant pastors and Catholic priests ranked parents first, ahead of the church, as responsible for children's faith formation.
+  - Source: Barna Group, "Who Is Responsible for Children's Faith Formation?", https://www.barna.com/research/children-faith-formation/
+  - Search result says: "99% of Protestant pastors and 96% of Catholic priests ranked parents first, ahead of the Church."
+  - CONFIDENCE: high for "nearly all"; low for exact percentages
+- Fact: Pew Research Center finds that a religious upbringing often leads to religious adulthood but does not guarantee it.
+  - Source: Pew Research Center, "US Christian Decline May Be Stabilizing: 2023-24 Religious Landscape Study", 2025, https://www.pewresearch.org/religion/2025/02/26/decline-of-christianity-in-the-us-has-slowed-may-have-leveled-off/
+  - Search result says: "for many people, a religious upbringing leads to a religious adulthood, but raising children in a religious environment is no guarantee that they will be religious as adults."
+  - CONFIDENCE: high
+- Fact: Adults whose families talked about religion often while they were growing up were more likely to keep their parents' faith.
+  - Source: Pew Research Center, "The links between religious upbringing, current religious identity", 2016, https://www.pewresearch.org/religion/2016/10/26/links-between-childhood-religious-upbringing-and-current-religious-identity/
+  - Search result says: "89% of adults with an exclusively Protestant background whose parents talked a lot about religion were Protestants today, compared with 67% of those whose parents did not discuss religion very much."
+  - CONFIDENCE: high for the direction of the finding; use numbers with care
+- Fact: Most U.S. teens share their parents' religious identity, and many attend services with them.
+  - Source: Pew Research Center, "U.S. Teens Take After Their Parents Religiously, Attend Services Together and Enjoy Family Rituals", 2020, https://www.pewresearch.org/religion/2020/09/10/u-s-teens-take-after-their-parents-religiously-attend-services-together-and-enjoy-family-rituals/
+  - Search result says: (title wording) "U.S. Teens Take After Their Parents Religiously, Attend Services Together and Enjoy Family Rituals."
+  - CONFIDENCE: high (based on the page title)
+- Fact: In a Lifeway Research study of churchgoing Protestant parents, regular Bible reading in childhood was the strongest predictor of spiritual health in adult children.
+  - Source: Lifeway Research, "Young Bible Readers More Likely to be Faithful Adults, Study Finds", 2017, https://research.lifeway.com/2017/10/17/young-bible-readers-more-likely-to-be-faithful-adults-study-finds/
+  - Search result says: Bible reading "stood out as the strongest predictor"; the study gathered parents' observations on 3,472 adult children.
+  - CONFIDENCE: low (sponsored by Lifeway Kids, a publisher; correlational; churchgoing Protestants only)
+
+## bible-story-books-for-kids
+- Fact: By age 3, most children ask "who," "what," "where" or "why" questions and can hold a short back-and-forth conversation.
+  - Source: CDC, "Milestones by 3 Years", https://www.cdc.gov/act-early/milestones/3-years.html
+  - Search result says: "Talks with you in conversation using at least two back-and-forth exchanges · Asks 'who,' 'what,' 'where,' or 'why' questions."
+  - CONFIDENCE: high
+- Fact: By age 4, most children can say what comes next in a well-known story.
+  - Source: CDC, "Milestones by 4 Years", https://www.cdc.gov/act-early/milestones/4-years.html
+  - Search result says: "A 4-year-old should tell what comes next in a well-known story."
+  - CONFIDENCE: high (the tool's wording; CDC checklist phrasing may differ slightly)
+- Fact: By age 5, most children can tell a story they heard or made up with at least two events, and can answer simple questions about a book after you read it.
+  - Source: CDC, "Milestones by 5 Years", https://www.cdc.gov/act-early/milestones/5-years.html
+  - Search result says: "tell a story she heard or made up with at least two events, and they answer simple questions about a book or story after you read or tell it."
+  - CONFIDENCE: high
+- Fact: Young children learn through repetition and need to hear the same story many times to fully understand it.
+  - Source: ZERO TO THREE, "Supporting Language and Literacy Skills from 12–24 Months", https://www.zerotothree.org/resource/supporting-language-and-literacy-skills-from-12-24-months/
+  - Search result says: "Children learn through repetition. Although adults may tire of the same book, young children need to hear the same story many times to fully understand it."
+  - CONFIDENCE: high (the page is aimed at 12 to 24 months; say "young children")
+- Fact: The CDC suggests taking time to answer a child's "why" questions, and if you don't know, finding the answer together in a book or from another adult.
+  - Source: CDC, positive parenting / milestone pages for preschoolers (exact page uncertain; result listed under the 3- and 5-year milestone pages), https://www.cdc.gov/act-early/milestones/3-years.html
+  - Search result says: "Take time to answer your child's 'why' questions. If you don't know the answer, say 'I don't know,' or help your child find the answer in a book, on the Internet, or from another adult."
+  - CONFIDENCE: low (the exact CDC page is uncertain)
+- Fact: For preschoolers, the AAP suggests asking them to describe the pictures or guess what happens next.
+  - Source: HealthyChildren.org (AAP), "How to Share Books with Your Preschooler", https://www.healthychildren.org/English/ages-stages/preschool/Pages/How-to-Share-Books-with-Your-Preschooler.aspx
+  - Search result says: "For preschoolers, asking them to describe pictures or predict the story works well."
+  - CONFIDENCE: low (this was the tool's paraphrase and not clearly tied to this one page)
+
+## nature-books-for-kids
+- Fact: NAEYC says young children are active scientists from birth who explore their world, but they need adults to help them build those skills.
+  - Source: NAEYC, "Looking at the World: Children and Science" (Young Children, May 2019), https://www.naeyc.org/resources/pubs/yc/may2019/children-science
+  - Search result says: "active scientists, right now, systematically and intentionally exploring their environments, even from the day they are born. But just because children are born scientists doesn't mean they can do all this alone."
+  - CONFIDENCE: high (NAEYC domain; which of the NAEYC science pages holds the line is approximate)
+- Fact: NAEYC tells families to model curiosity by wondering out loud and not to rush to correct a child's science ideas.
+  - Source: NAEYC, "Nurturing the Scientist in Your Child", https://www.naeyc.org/our-work/families/nurturing-scientist-your-child
+  - Search result says: "Model your own curiosity. Wonder out loud by saying things like, 'I wonder what would happen if'"; "Don't immediately correct your child if he or she says something that is scientifically incorrect."
+  - CONFIDENCE: high
+- Fact: The AAP says children play harder outdoors than indoors and need daily chances to play outside, and more outdoor time is linked to better motor skills and lower risk of obesity and nearsightedness.
+  - Source: HealthyChildren.org (AAP), "Playing Outside: Why It's Important for Kids", https://www.healthychildren.org/English/family-life/power-of-play/Pages/playing-outside-why-its-important-for-kids.aspx
+  - Search result says: children "play harder outdoors than indoors and they need daily opportunities to do so"; it links more outdoor time with better motor development and lower obesity and nearsightedness risk.
+  - CONFIDENCE: high
+- Fact: The same AAP page says studies found that children who spent more time exploring nature had better learning outcomes, and that stress is lower for people who spend time in nature.
+  - Source: HealthyChildren.org (same URL)
+  - Search result says: "children who spent more time in nature exploration had improved learning outcomes"; "stress and depression are lower for all people who spend time in nature."
+  - CONFIDENCE: high
+- Fact: Reading Rockets suggests informational books with colorful photos to help young children build knowledge about the world, and sorts science nonfiction into types including hands-on books such as field guides.
+  - Source: Reading Rockets, "Five Kinds of STEM-themed Nonfiction Books for Kids", https://www.readingrockets.org/topics/background-knowledge/articles/five-kinds-stem-themed-nonfiction-books-kids
+  - Search result says: sorts STEM nonfiction into "traditional, browse-able, narrative, expository, and active" types; "These browse-able books are highly interactive and/or teach skills that readers can use to engage in an activity."
+  - CONFIDENCE: high
+- Gap: no strong source found specifically on life cycles as early science, and none from NSTA.
+
+## coloring-books-for-kids
+- Fact: The AAP says coloring books, crayons, markers and clay build creativity and help improve fine motor skills.
+  - Source: HealthyChildren.org (AAP), "Toy Buying Tips for Babies & Young Children: AAP Report Explained", https://www.healthychildren.org/English/ages-stages/baby/Pages/What-to-Look-for-in-a-Toy.aspx
+  - Search result says: "coloring books, crayons, markers, clay, stickers all make great gifts, build creativity, and help improve fine motor skills."
+  - CONFIDENCE: high
+- Fact: By age 3, most children can draw a circle after you show them how.
+  - Source: CDC, "Milestones by 3 Years", https://www.cdc.gov/act-early/milestones/3-years.html
+  - Search result says: "Cognitive - Draws a circle, when you show him how."
+  - CONFIDENCE: high
+- Fact: By age 4, most children can draw a person with three or more body parts.
+  - Source: CDC, "Milestones by 4 Years", https://www.cdc.gov/act-early/milestones/4-years.html
+  - Search result says: the 4-year list includes "drawing a person with three or more body parts" under cognitive milestones.
+  - CONFIDENCE: high
+- Fact: By age 5, most children can write some letters in their name.
+  - Source: CDC, "Milestones In Action: By 5 Years", https://www.cdc.gov/act-early/milestones-in-action/5-years.html
+  - Search result says: "The child in this video is writing some letters in her name, a 5-year cognitive milestone."
+  - CONFIDENCE: high
+- Fact: CDC milestones are things most children (75% or more) can do by a certain age.
+  - Source: CDC, "Milestones by 5 Years" / milestone pages, https://www.cdc.gov/act-early/milestones/5-years.html
+  - Search result says: "Developmental milestones are things most children (75% or more) can do by a certain age."
+  - CONFIDENCE: high
+- Fact: Early art supports hand and finger control, problem solving and symbolic thinking; adults can mostly watch and encourage.
+  - Source: ZERO TO THREE, "Raising the Next Frida Kahlo or Pablo Picasso: Milestones Toward Drawing", https://www.zerotothree.org/resource/raising-the-next-frida-kahlo-or-pablo-picasso-milestones-toward-drawing/
+  - Search result says: "early art experiences offer lots of benefits, supporting the development of hand and finger control, problem-solving and symbolic thinking skills."
+  - CONFIDENCE: high
+- Fact: Strong fine motor skills in early childhood can predict not only writing success but also better reading and math in elementary school.
+  - Source: HealthyChildren.org (AAP), "The Importance of Handwriting in the Digital Age", https://www.healthychildren.org/English/family-life/Media/Pages/The-Importance-of-Handwriting-in-the-Digital-Age.aspx
+  - Search result says: developing fine motor skills in early childhood "can predict not only writing success, but better performance in reading and math in elementary school."
+  - CONFIDENCE: high
+- Fact: At age 4, a child holds a pencil with fingers and thumb (a tripod grasp) and can copy a cross, a square and some letters.
+  - Source: AAP, "Bright Futures Milestones and Anticipatory Guidance" (PDF), https://publications.aap.org/DocumentLibrary/Solutions/Toolkits/BFTK-IR/Bright%20Futures%20Milestones%20and%20Anticipatory%20Guidance.pdf (possibly the Pediatrics in Review article "Developmental Milestones: Motor Development")
+  - Search result says: "At age 4 years, a palmar tripod grasp allows for finer control of pencil movements, and the child can copy a cross, a square, and some letters and numerals."
+  - CONFIDENCE: low (the exact AAP document is uncertain)
+
+## books-for-teens
+- Fact: Federal NAEP long-term trend data show that far fewer 13-year-olds read for fun almost every day than in the past: about 14% in 2025, down from 27% in 2012.
+  - Source: The Nation's Report Card (NCES), "Key Findings 2025 Long-Term Trend Assessments", https://www.nationsreportcard.gov/ltt/2025/supporting-files/2026-ltt-results-infographic.pdf; earlier years: NAEP 2012 Long-Term Trend, https://www.nationsreportcard.gov/ltt_2012/context_read.aspx
+  - Search result says: about "14% of 13-year-olds reading for fun almost every day in 2025. That is down from 27% in 2012"; and "lower percentages of students reported reading for fun almost daily in 2025 than in 1984."
+  - CONFIDENCE: high for "fewer than in 1984/2012"; low for the exact 14% until checked (one result only)
+- Fact: Earlier NAEP data showed the share of 13-year-olds reading for fun almost every day fell from 35% in 1984 to 26% in 2008.
+  - Source: NAEP, "2008 Long-Term Trend: Read for Fun (Reading)", https://www.nationsreportcard.gov/ltt_2008/ltt0013.aspx?tab_id=tab2&subtab_id=Tab_1
+  - Search result says: "35 percent in 1984 to 26 percent in 2008."
+  - CONFIDENCE: low (precise numbers; one result)
+- Fact: In Common Sense Media's 2019 census, just over half of teens read for fun at least once a week, and about a third read for pleasure less than once a month, if at all.
+  - Source: Common Sense Media, "The Common Sense Census: Media Use by Tweens and Teens" press release, 2019, https://www.commonsensemedia.org/press-releases/the-common-sense-census-media-use-by-tweens-and-teens-new-research-finds-youtube-videos-beat-out-tv-and
+  - Search result says: "just over half of teens (51%) still read for fun at least once a week, nearly a third of teens (32%) say they read for pleasure less than once a month, if at all."
+  - CONFIDENCE: high
+- Fact: Teens enjoy reading less than tweens do: 24% of teens versus 38% of tweens said they enjoy reading "a lot."
+  - Source: Common Sense Media, 2019 census (same URL)
+  - Search result says: "just 24% of teens, compared with 38% of tweens, saying they enjoy reading 'a lot.'"
+  - CONFIDENCE: high
+- Fact: YALSA (the ALA's teen library division) says young adult literature meets teens' developmental needs, including literacy skills.
+  - Source: American Library Association / YALSA, "The Value of Young Adult Literature", https://www.ala.org/yalsa/guidelines/whitepapers/yalit
+  - Search result says: "As a literature of relevance that meets developmental needs – including literacy skills — young adult literature also becomes a developmental asset."
+  - CONFIDENCE: high (an older white paper)
+- Fact: YALSA cites a 2010 Dominican University study: students in a public library summer reading program scored higher on reading tests the next fall than those who did not take part.
+  - Source: ALA / YALSA, "Teens Need Libraries", https://www.ala.org/yalsa/teens-need-libraries
+  - Search result says: "a 2010 study from Dominican University (pdf) demonstrated that students who participated in a public library summer reading program scored higher on reading achievement tests at the beginning of the next school year than those students who did not participate."
+  - CONFIDENCE: high (secondary citation of the study; page attribution within ala.org approximate)
+
+## story-books-by-age
+- Fact: For babies, the AAP suggests chunky board books, soft cloth books or vinyl bath books from birth; mouthing books is normal and part of how babies learn about books.
+  - Source: HealthyChildren.org (AAP), "How to Share Books With Your Baby", https://www.healthychildren.org/English/ages-stages/baby/Pages/how-to-share-books-with-your-baby.aspx (and "Developmental Milestones of Early Literacy", https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-of-Early-Literacy.aspx)
+  - Search result says: "go ahead and start reading chunky board books, soft fabric books, or vinyl bath books from birth to 6 months"; mouthing books are "important ways babies learn about how books work."
+  - CONFIDENCE: high (which of the two AAP pages holds each line is approximate)
+- Fact: For toddlers, board books with simple stories and rhymes or repeated phrases hold attention; by 2 to 3 years, books with regular paper pages and an engaging plot work well.
+  - Source: HealthyChildren.org / ZERO TO THREE (same AAP page as above; ZERO TO THREE, "Read Early and Often", https://www.zerotothree.org/resource/read-early-and-often/)
+  - Search result says: "stories with rhymes and phrases that repeat also catch a toddler's attention"; at 24 to 36 months, "regular pages and those that have an engaging plot."
+  - CONFIDENCE: low (unclear which organization's page)
+- Fact: Keep reading aloud even after children can read on their own; choosing stories above their reading level but within their interests stretches their understanding.
+  - Source: Reading Rockets, "Your School-Age Child", https://www.readingrockets.org/topics/activities/articles/your-school-age-child
+  - Search result says: "Even after children learn to read by themselves, it's still important for you to read aloud together. By reading stories that are on their interest level, but beyond their reading level, you can stretch young readers' understanding and motivate them to improve their skills."
+  - CONFIDENCE: high
+- Fact: Children often come to link reading with schoolwork, so reading together for fun at home matters.
+  - Source: HealthyChildren.org (AAP), "Tips to Help Your Child Enjoy Reading Aloud", https://www.healthychildren.org/English/ages-stages/gradeschool/school/Pages/Help-Your-Child-Enjoy-Reading-Aloud-Tips-for-Parents.aspx
+  - Search result says: "Your children will learn reading skills in school, but often they come to associate reading with work, not fun."
+  - CONFIDENCE: high
+- Fact: By early first grade, families can add books made for beginning readers, including some with chapters.
+  - Source: U.S. Department of Education booklet "Helping Your Child Become a Reader", hosted by Reading Rockets, https://www.readingrockets.org/sites/default/files/guide/English.pdf
+  - Search result says: "by early first grade, add to this mix some books designed for beginning readers, including some books that have chapters."
+  - CONFIDENCE: high
+- Fact: Scholastic's Kids & Family Reading Report found that reading aloud at home peaks around age 5 and drops off after that, especially after age 8.
+  - Source: Scholastic, "Kids & Family Reading Report, 7th Edition: The Rise of Read-Aloud", https://www.scholastic.com/readingreport/rise-of-read-aloud.html
+  - Search result says: "reading aloud peaks at age five. While a majority of families read aloud 5–7 days a week before a child enters kindergarten (55%), this percentage begins to decline dramatically with each additional year of age."
+  - CONFIDENCE: high for the pattern; low for exact percentages
+- Fact: In Scholastic's report, 40% of kids ages 6 to 11 whose parents stopped reading aloud to them said they wished it had continued.
+  - Source: Scholastic, Kids & Family Reading Report, 6th Edition (2017), https://www.scholastic.com/content/dam/KFRR/PastReports/KFRR2017_6th.pdf
+  - Search result says: "40% of kids (ages 6-11) whose parents stopped reading to them, say they WISHED their parents had continued."
+  - CONFIDENCE: low (a single result; edition attribution uncertain)
+
+## childrens-books-about-kindness
+- Fact: Harvard's Making Caring Common suggests using stories to build empathy by asking children how characters feel, and how they would feel in that character's place.
+  - Source: Making Caring Common (Harvard Graduate School of Education), "How to Use Stories to Help Kids Develop Empathy", https://mcc.gse.harvard.edu/resources-for-families/develop-empathy
+  - Search result says: "Ask questions about characters' or people's feelings. To make this more relatable to older kids, try to ask them about their own feelings in similar situations"; "Think and ask about different characters, not just the hero or main character"; "how would you feel if you were in their position?"
+  - CONFIDENCE: high
+- Fact: Making Caring Common advises parents to make caring for others a priority and to tell children that being kind matters as much as being happy.
+  - Source: Making Caring Common, "7 Tips for Raising Caring Kids", https://mcc.gse.harvard.edu/resources-for-families/7-tips-raising-caring-kids
+  - Search result says: kids need to hear that caring for others matters as much as their own happiness, for example saying "be kind and happy" instead of only "be happy."
+  - CONFIDENCE: high (paraphrase by the tool)
+- Fact: A 2018 meta-analysis found that reading fiction has a small positive effect on social understanding (understanding what others think and feel) compared with reading nonfiction or not reading.
+  - Source: Dodell-Feder D & Tamir DI, "Fiction reading has a small positive impact on social cognition: A meta-analysis", Journal of Experimental Psychology: General 147(11):1713–1727, 2018 (doi:10.1037/xge0000395); cited in PMC articles, e.g. https://pmc.ncbi.nlm.nih.gov/articles/PMC9365732/
+  - Search result says: "fiction reading improves social-cognitive performance relative to nonfiction reading or no reading (g = 0.15)."
+  - CONFIDENCE: low (only secondary citations were found; the original paper was not returned. The title wording "small positive impact" is consistent)
+- Fact: The Greater Good Science Center (UC Berkeley) reports that reading novels may build empathy by strengthening the ability to understand what others think and feel.
+  - Source: Greater Good Science Center, UC Berkeley, "Seven Ways to Foster Empathy in Kids" (or related GGSC article), https://greatergood.berkeley.edu/article/item/seven_ways_to_foster_empathy_in_kids
+  - Search result says: "Novels can make us more empathic and help us navigate our complex social world."
+  - CONFIDENCE: low (the exact GGSC article is uncertain; the line is about adults reading novels)
+- Fact: CASEL, a leading social-emotional learning organization, defines social and emotional learning to include learning to feel and show empathy for others and to build healthy relationships.
+  - Source: CASEL, "What Is SEL?", https://casel.org/what-is-sel/
+  - Search result says: "Social and emotional learning (SEL) is the process through which children and adults acquire and effectively apply the knowledge, attitudes, and skills necessary to understand and manage emotions, set and achieve positive goals, feel and show empathy for others, establish and maintain positive relationships, and make responsible decisions."
+  - CONFIDENCE: high
+- Fact: ZERO TO THREE suggests reading books about feelings with young children and talking about the pictures, such as asking which child looks mad or afraid.
+  - Source: ZERO TO THREE, "Books About Feelings for Babies and Toddlers", https://www.zerotothree.org/resource/books-about-feelings-for-babies-and-toddlers/
+  - Search result says: "read books about feelings and talk about the pictures: Which child looks mad? Which looks afraid?"
+  - CONFIDENCE: high

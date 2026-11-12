@@ -1,0 +1,84 @@
+{# Shared building blocks. Books always link to Amazon in a new tab. #}
+
+{% macro icon(name) -%}
+{% if name == "facebook" -%}
+<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.6 22v-8.2h2.8l.4-3.2h-3.2V8.6c0-.9.3-1.6 1.6-1.6H17V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.5v3.2h2.8V22z"/></svg>
+{%- elif name == "instagram" -%}
+<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.4" cy="6.6" r="1.35" fill="currentColor"/></svg>
+{%- elif name == "tiktok" -%}
+<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.7 2.5c.4 2.3 1.9 3.9 4.2 4.1v3.3c-1.6 0-3-.5-4.2-1.3v6.5c0 3.5-2.7 6.4-6.1 6.4s-6.1-2.6-6.1-6c0-3.6 3-6.3 6.7-5.9v3.4c-1.6-.4-3.3.7-3.3 2.5 0 1.5 1.2 2.7 2.6 2.7 1.6 0 2.7-1.2 2.7-2.9V2.5z"/></svg>
+{%- endif %}
+{%- endmacro %}
+
+{% macro social(cls="") -%}
+<ul class="social {{ cls }}" role="list">
+{% for s in site.social %}
+<li><a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="Kid Story Books on {{ s.name }} (opens in a new tab)">{{ icon(s.icon) }}</a></li>
+{% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro cover(b, lazy=True, w=200, h=300, priority=False) -%}
+<span class="cover cover--{{ b.category }}"><span class="cover__fallback">{{ b.title }}</span><img src="{{ biz.cover_url }}{{ b.asin }}.jpg" alt="{{ b.title | attr }}" width="{{ w }}" height="{{ h }}"{% if lazy %} loading="lazy"{% endif %} decoding="async"{% if priority %} fetchpriority="high"{% endif %}></span>
+{%- endmacro %}
+
+{% macro book_card(b, lazy=True) -%}
+<article class="book" data-cat="{{ b.category }}" data-title="{{ b.title | lower | attr }}">
+<a class="book__cover" href="{{ biz.amazon_dp }}{{ b.asin }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{{ cover(b, lazy) }}</a>
+<p class="book__title">{{ b.title }}</p>
+<p class="book__cat">{{ cat[b.category].label }}</p>
+<a class="btn btn--buy" href="{{ biz.amazon_dp }}{{ b.asin }}" target="_blank" rel="noopener" aria-label="Buy {{ b.title | attr }} on Amazon (opens in a new tab)">Buy on Amazon</a>
+</article>
+{%- endmacro %}
+
+{% macro grid(list, cls="") -%}
+<div class="books {{ cls }}">
+{% for b in list %}
+{{ book_card(b) }}
+{% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro collage(asins, alt, cls="") -%}
+<figure class="collage {{ cls }}" role="img" aria-label="{{ alt | attr }}">
+{% for a in asins %}{% set b = book(a) %}
+{{ cover(b) }}
+{% endfor %}
+</figure>
+{%- endmacro %}
+
+{% macro hero_collage(asins) -%}
+<div class="hero__art" aria-hidden="true">
+{% for a in asins %}{% set b = book(a) %}
+{{ cover(b, lazy=False, priority=loop.index <= 3) }}
+{% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro topic_cards(exclude="") -%}
+<div class="cards cards--topics">
+{% for t in site.topics if t.slug != exclude %}
+<a class="tcard" href="/{{ t.slug }}/"><span class="tcard__title">{{ t.label }}</span><span class="tcard__text">{{ t.blurb }}</span></a>
+{% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro sources(list) -%}
+<aside class="sources" aria-labelledby="sources-h">
+<h2 id="sources-h">Sources</h2>
+<ol>
+{% for s in list %}
+<li>{{ s.org }}, <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.year %} ({{ s.year }}){% endif %}.</li>
+{% endfor %}
+</ol>
+</aside>
+{%- endmacro %}
+
+{% macro amazon_cta(h="See every book on Amazon", text="Maurice Johnson's Amazon author page lists every Kid Story Books title in one place, with the formats Amazon has for each book.") -%}
+<section class="band band--yellow cta">
+<div class="rail cta__inner">
+<div><h2>{{ h }}</h2><p>{{ text }}</p></div>
+<div class="btns"><a class="btn btn--navy" href="{{ biz.amazon_author }}" target="_blank" rel="noopener">Open the Amazon author page</a><a class="btn btn--ghost" href="/books/">Browse all 220 books</a></div>
+</div>
+</section>
+{%- endmacro %}

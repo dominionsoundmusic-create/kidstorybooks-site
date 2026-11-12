@@ -1,0 +1,171 @@
+{
+  "business": {
+    "name": "Kid Story Books",
+    "origin": "https://kidstorybooks.com",
+    "author": "Maurice Johnson",
+    "publisher": "Dominion Publishing",
+    "parent": "Dominion Digital Group",
+    "region": "East Texas",
+    "description": "Kid Story Books shows the children's books, Christian picture books, nature books, coloring books, cookbooks and teen books written by Maurice Johnson and published by Dominion Publishing. Every book is sold on Amazon.",
+    "amazon_author": "https://www.amazon.com/author/dominionpublishing",
+    "amazon_dp": "https://www.amazon.com/dp/",
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/P/",
+    "theme_color": "#3BA7E6",
+    "handwritten": "dwdp:handwritten 2026-11-12"
+  },
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/bestkidstorybooks",
+      "icon": "facebook"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/bestkidstorybooks/",
+      "icon": "instagram"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/@bestkidstorybooks",
+      "icon": "tiktok"
+    }
+  ],
+  "analytics": {
+    "ga4_id": ""
+  },
+  "footer_quote": {
+    "text": "\"I believe the unbelievable, I receive the impossible, because it's doable.\"",
+    "credit": "— Jesse Duplantis",
+    "disclaimer": "Jesse Duplantis and Jesse Duplantis Ministries are not connected with this site and did not write, review or endorse it."
+  },
+  "categories": [
+    {
+      "key": "childrens",
+      "label": "Children's stories",
+      "color": "#FFC93C"
+    },
+    {
+      "key": "christian",
+      "label": "Christian",
+      "color": "#8FD0F5"
+    },
+    {
+      "key": "nature",
+      "label": "Nature and science",
+      "color": "#9BE0A8"
+    },
+    {
+      "key": "cookbooks",
+      "label": "Cookbooks",
+      "color": "#FFB3A8"
+    },
+    {
+      "key": "coloring",
+      "label": "Coloring and activity",
+      "color": "#FFE08A"
+    },
+    {
+      "key": "teens",
+      "label": "Teens",
+      "color": "#C9B8F2"
+    }
+  ],
+  "nav": [
+    {
+      "label": "All Books",
+      "href": "/books/"
+    },
+    {
+      "label": "Christian",
+      "href": "/christian-childrens-books/"
+    },
+    {
+      "label": "Bible Stories",
+      "href": "/bible-story-books-for-kids/"
+    },
+    {
+      "label": "Bedtime",
+      "href": "/bedtime-stories-for-kids/"
+    },
+    {
+      "label": "More Topics",
+      "children": [
+        {
+          "label": "Picture books for kindergarten",
+          "href": "/picture-books-for-kindergarten/"
+        },
+        {
+          "label": "Nature books",
+          "href": "/nature-books-for-kids/"
+        },
+        {
+          "label": "Books about kindness",
+          "href": "/childrens-books-about-kindness/"
+        },
+        {
+          "label": "Story books by age",
+          "href": "/story-books-by-age/"
+        },
+        {
+          "label": "Coloring books",
+          "href": "/coloring-books-for-kids/"
+        },
+        {
+          "label": "Books for teens",
+          "href": "/books-for-teens/"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "christian-childrens-books",
+      "label": "Christian children's books",
+      "blurb": "Faith stories, God's names and prayer books for little ones."
+    },
+    {
+      "slug": "bible-story-books-for-kids",
+      "label": "Bible story books for kids",
+      "blurb": "Noah, Jonah, David, Moses and more, told for young readers."
+    },
+    {
+      "slug": "bedtime-stories-for-kids",
+      "label": "Bedtime stories for kids",
+      "blurb": "Moon, star and lullaby titles for a calm end to the day."
+    },
+    {
+      "slug": "picture-books-for-kindergarten",
+      "label": "Picture books for kindergarten",
+      "blurb": "How to pick a read-aloud for a five or six year old."
+    },
+    {
+      "slug": "nature-books-for-kids",
+      "label": "Nature books for kids",
+      "blurb": "Life cycles of frogs, bees, sea turtles, trees and more."
+    },
+    {
+      "slug": "childrens-books-about-kindness",
+      "label": "Books about kindness",
+      "blurb": "Sharing, the Golden Rule and talking about feelings."
+    },
+    {
+      "slug": "story-books-by-age",
+      "label": "Story books by age",
+      "blurb": "What tends to work from age 3 to the teen years."
+    },
+    {
+      "slug": "coloring-books-for-kids",
+      "label": "Coloring books for kids",
+      "blurb": "Holiday, unicorn, train and puzzle books for busy hands."
+    },
+    {
+      "slug": "books-for-teens",
+      "label": "Books for teens",
+      "blurb": "Quiet Strength, daily affirmations and Black history."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+kjv.json: King James Version (public domain), from https://github.com/thiagobodruk/bible (json/en_kjv.json), commit 4c8b8a4a7bd75fee381e1b55523b152191d6a1a5, fetched 2026-11-12.

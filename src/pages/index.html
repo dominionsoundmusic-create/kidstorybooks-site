@@ -1,0 +1,77 @@
+---
+type: home
+title: "Children's Books by Maurice Johnson | Kid Story Books"
+description: "Children's books by Maurice Johnson: Christian picture books, Bible stories, bedtime stories, nature books and more. Browse 220 titles and buy on Amazon."
+h1: "Children's Books for Reading Together"
+lead: "Kid Story Books is home to 220 children's books by Maurice Johnson: Christian stories, Bible stories, bedtime stories, nature books, coloring books and more. Every book is sold on Amazon."
+cta1: {label: "Browse all 220 books", href: "/books/"}
+cta2: {label: "Shop on Amazon", href: "https://www.amazon.com/author/dominionpublishing"}
+hero_books: [B0H4SNH1SY, B0FXRGGS7M, B0GTZK4KQ4, B0GKV1QTHT, B0GXDZ6TNW, B0FXRKJ5K3, B0G3TPMGWW, B0GY815SH7, B0FY3N357X, B0G4VRNPCX, B0GWWXB1QC, B0GXJ7DCK7]
+featured: [B0H1RXJJLL, B0GZPK1SBB, B0H2RVLFNK, B0GX6NKB8K, B0H4SNH1SY, B0FXTFMZX4, B0G2CTRB42, B0GKV1QTHT, B0GY8VFHB8, B0GD77WRVQ, B0G9SR81H3, B0FY5GW6BL]
+faqs:
+  - q: "Where can I buy Kid Story Books children's books?"
+    a: "Every book is sold on Amazon. Tap any Buy on Amazon button on this site and the book's own Amazon page opens in a new tab. This site does not have a cart or checkout."
+  - q: "Who writes the books on Kid Story Books?"
+    a: "Maurice Johnson writes them, and Dominion Publishing publishes them. Dominion Publishing is part of Dominion Digital Group. Maurice is a Christian author based in East Texas."
+  - q: "What kinds of children's books are there?"
+    a: "There are 220 books in six groups: 71 children's stories, 65 Christian books, 34 nature and science books, 32 cookbooks, 9 coloring and activity books and 9 books for teens."
+  - q: "Are the books paperback or eBook?"
+    a: "Most are paperback. Some titles also have other formats and some do not, so check the formats listed on each book's Amazon page before you buy."
+  - q: "How do I find a children's book to read to my child tonight?"
+    a: "Start with the bedtime stories page for calm, nighttime titles, or use the search box on the All Books page to look for a word like moon, bear or Noah."
+---
+{% block content %}
+<section class="sect">
+<div class="rail">
+<div class="sect-head"><h2>Pick a shelf</h2><p>Four of the most-read topics. Every book links straight to Amazon.</p></div>
+<div class="cards cards--cats">
+<a class="ccard" href="/christian-childrens-books/">
+{{ photo("christian-childrens-books-family-reading.jpg", "A cozy reading corner with a stack of Christian children's books", "A sunny living-room reading nook with a soft rug, floor cushions and a stack of colorful children's picture books next to a small wooden cross on a low shelf.", ["B0GKV1QTHT", "B0GLP63ZK8", "B0G356DQD4"]) }}
+<span class="ccard__body"><span class="ccard__title">Christian books</span>{{ count("christian") }} books about God's love, His names, prayer and thankful hearts. <span class="ccard__go">See Christian books</span></span>
+</a>
+<a class="ccard" href="/bible-story-books-for-kids/">
+{{ photo("bible-story-books-open-on-rug.jpg", "Open children's Bible story books on a play rug", "Two open children's picture books with bright pages lying on a colorful play rug, a toy wooden ark and small animal figures beside them.", ["B0FXRGGS7M", "B0FXRKJ5K3", "B0FY3N357X"]) }}
+<span class="ccard__body"><span class="ccard__title">Bible stories</span>Noah's Ark, Jonah and the Big Fish, David and Goliath and more. <span class="ccard__go">See Bible stories</span></span>
+</a>
+<a class="ccard" href="/bedtime-stories-for-kids/">
+{{ photo("bedtime-stories-night-light.jpg", "A child's bed with a picture book and a warm night light", "A tidy child's bed with a soft quilt, a picture book lying open on the pillow and a warm moon-shaped night light glowing on the nightstand.", ["B0GTZK4KQ4", "B0G4VRNPCX", "B0G2CTRB42"]) }}
+<span class="ccard__body"><span class="ccard__title">Bedtime stories</span>Moon, star and lullaby titles for the last few minutes of the day. <span class="ccard__go">See bedtime stories</span></span>
+</a>
+<a class="ccard" href="/nature-books-for-kids/">
+{{ photo("nature-books-for-kids-garden.jpg", "Nature books for kids on a garden table with a magnifying glass", "A bright garden table with children's nature books, a kid's magnifying glass, a small potted bean sprout and a butterfly resting on a flower.", ["B0GXDZ6TNW", "B0GY815SH7", "B0GXJ7DCK7"]) }}
+<span class="ccard__body"><span class="ccard__title">Nature books</span>{{ count("nature") }} books on frogs, butterflies, bees, sea turtles, trees and more. <span class="ccard__go">See nature books</span></span>
+</a>
+</div>
+</div>
+</section>
+
+<section class="band band--sky">
+<div class="rail">
+<div class="sect-head"><h2>Featured children's books</h2><p><a href="/books/">See all 220 books</a></p></div>
+{{ m.grid(page.shelf_books) }}
+</div>
+</section>
+
+<section class="sect">
+<div class="rail split">
+<div>
+<h2>Children's books to read together</h2>
+<p class="lede">These children's books are made for reading out loud: on the couch after school, at the kitchen table, at church, or in bed before the lights go out.</p>
+<p>Maurice Johnson writes for parents, grandparents, teachers and churches who want good stories for the children in their lives. Many of his books are Christian picture books. Others are about animals, feelings, family, the natural world and the holidays. There are also cookbooks, coloring and puzzle books, and a shelf of books for teens.</p>
+<p>The site does not sell anything itself. Each book has its own page on Amazon, where you can see the formats, the current price and the shipping options. Pick a topic below to find books that fit your child, or search the full list.</p>
+</div>
+{{ m.collage(["B0G3TPMGWW", "B0GXVLH1HF", "B0GZPK1SBB", "B0G6RZ217V", "B0GLGJZFVN", "B0GCHYKQ61"], "Six Kid Story Books covers, from Planting Seeds of Kindness to The Girl Who Planted a Raincloud") }}
+</div>
+</section>
+
+<section class="band band--soft">
+<div class="rail">
+<h2>Find books by topic</h2>
+<p>Each page explains the topic for parents and shows only the books whose titles fit it.</p>
+{{ m.topic_cards() }}
+</div>
+</section>
+{% endblock %}
+{% block after %}
+{{ m.amazon_cta() }}
+{% endblock %}

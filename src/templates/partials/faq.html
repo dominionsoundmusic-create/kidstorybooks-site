@@ -1,0 +1,10 @@
+<section class="sect faq" aria-labelledby="faq-h">
+<div class="rail">
+<h2 id="faq-h">{{ page.faq_title | default('Questions parents ask') }}</h2>
+<div class="faq__list">
+{% for f in page.faqs %}
+<div class="faq__item"><h3>{{ f.q }}</h3><p>{{ f.a }}</p></div>
+{% endfor %}
+</div>
+</div>
+</section>

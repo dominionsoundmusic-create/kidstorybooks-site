@@ -1,0 +1,30 @@
+<footer class="site-footer">
+<div class="rail footer__grid">
+<div class="footer__brand">
+<a class="logo logo--footer" href="/"><img src="/favicon.svg" alt="" width="36" height="37" loading="lazy"><span>Kid Story Books</span></a>
+<p>Children's books, Christian picture books and more by {{ biz.author }}, published by {{ biz.publisher }}. Every book is sold on Amazon.</p>
+{{ m.social("social--footer") }}
+<p class="footer__msg">Questions? Send a message on the <a href="{{ site.social[0].url }}" target="_blank" rel="noopener">Kid Story Books Facebook page</a>.</p>
+</div>
+<div>
+<p class="footer__h">Books</p>
+<ul role="list">
+<li><a href="/books/">All 220 books</a></li>
+<li><a href="{{ biz.amazon_author }}" target="_blank" rel="noopener">Amazon author page</a></li>
+<li><a href="/about/">About Maurice Johnson</a></li>
+<li><a href="/privacy-policy/">Privacy policy</a></li>
+</ul>
+</div>
+<div>
+<p class="footer__h">Topics</p>
+<ul role="list" class="footer__topics">
+{% for t in site.topics %}<li><a href="/{{ t.slug }}/">{{ t.label }}</a></li>{% endfor %}
+</ul>
+</div>
+</div>
+<div class="rail footer__quote">
+<p class="quote">{{ site.footer_quote.text }} {{ site.footer_quote.credit }}</p>
+<p class="disclaimer">{{ site.footer_quote.disclaimer }}</p>
+<p class="copy">&copy; 2026 {{ biz.publisher }}, part of {{ biz.parent }}. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+</div>
+</footer>

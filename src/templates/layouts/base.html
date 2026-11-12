@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- {{ biz.handwritten }} -->
+{% set canonical = biz.origin ~ page.url %}
+{% set og_img = biz.cover_url ~ (page.og_asin if page.og_asin is defined else page.hero_books[0]) ~ '.jpg' if page.hero_books is defined else biz.origin ~ '/apple-touch-icon.png' %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description | attr }}">
+{% if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{% else %}
+<link rel="canonical" href="{{ canonical }}">
+{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ biz.name }}">
+<meta property="og:title" content="{{ page.title | attr }}">
+<meta property="og:description" content="{{ page.description | attr }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ og_img }}">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="{{ biz.theme_color }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/nunito-latin-var.woff2" crossorigin>
+{% if page.hero_books is defined %}
+<link rel="preload" as="image" href="{{ biz.cover_url }}{{ page.hero_books[0] }}.jpg" fetchpriority="high">
+{% endif %}
+<style>{{ inline_css }}</style>
+<script>document.documentElement.className+=' js';(function(){function bad(i){var c=i.closest&&i.closest('.cover');if(c){c.classList.add('cover--none');i.remove();}}document.addEventListener('error',function(e){if(e.target.tagName==='IMG')bad(e.target);},true);document.addEventListener('load',function(e){var i=e.target;if(i.tagName==='IMG'&&i.naturalWidth<20)bad(i);},true);})();</script>
+<script type="application/ld+json">{{ page.jsonld | tojson_ld }}</script>
+</head>
+<body class="page-{{ page.type }}">
+<a class="skip" href="#main">Skip to content</a>
+{% include "partials/header.html" %}
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+{% include "partials/footer.html" %}
+<script src="/js/site.js" defer></script>
+{% if site.analytics.ga4_id %}
+<script>(function(){var done=false;function go(){if(done)return;done=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id={{ site.analytics.ga4_id }}';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','{{ site.analytics.ga4_id }}');}['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,go,{once:true,passive:true});});setTimeout(go,6000);})();</script>
+{% endif %}
+</body>
+</html>
