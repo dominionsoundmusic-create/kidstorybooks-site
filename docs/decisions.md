@@ -12,7 +12,7 @@ Maurice was not available, so these calls were made during the build. Each can b
   Kids' Baking Book"); the rest are adult cookbooks ("Elevated Southern", "High-Protein", "Type 2 Table"
   and so on). All 32 cookbooks still appear on /books/ under the Cookbooks filter.
 - **D-04 All other planned topic pages kept.** Fitting titles counted from data/books.json:
-  Bible stories 9, bedtime (night, moon, star, lullaby or sleep in the title) 11, kindness / sharing /
+  Bible stories 9, bedtime (night, nocturnal, moon, star, lullaby or sleep in the title) 9, kindness / sharing /
   feelings 9, kindergarten animal-title shelf 18, nature 34, coloring and activity 9, teens 9, Christian 65,
   by-age (titles that state an age) 15.
 - **D-05 Prices left off.** books.json prices are list prices copied from the old site. Amazon prices
